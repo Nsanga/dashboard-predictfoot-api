@@ -3,3 +3,4 @@ node_modules
 uploads/images/*
 data/*
 !uploads/images/.gitkeep
+.env
