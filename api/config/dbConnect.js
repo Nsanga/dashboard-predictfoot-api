@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const localDB = process.env.MONGODB_URL_LOCAL;
-const liveDB = process.env.MONGODB_URL_LIVE;
+const localDB = process.env.URL_DB_LOCAL;
+const liveDB = process.env.URL_DB_LIVE;
 
 const dbConnect = async () => {
   try {
@@ -13,7 +13,7 @@ db.once('open', function() {
     console.log('Connected to mongodb');
 })
   } catch (error) {
-    console.error('Erreur de connexion à MongoDB :', error);
+    console.error('MongoDB connection error :', error);
     throw error;
   }
 };
