@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules.
-var aboutController = require('../../controllers/landingPageControllers/about.controller');
+var aboutController = require('../../controllers/landingPage/about.controller');
 
 const aboutRoutes = app => {
   app.use("/landing-page/about", router);

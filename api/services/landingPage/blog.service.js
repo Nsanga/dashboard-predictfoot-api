@@ -1,49 +1,56 @@
-const Bandeau = require('../../models/landingPageModels/bandeau.model')
+const Blog = require('../../models/landingPage/blog.model')
 const { performCrudOperation } = require('../crud.service');
 const { errorResponse, successResponse }  = require ('../apiResponse.service');
 
 async function performCrudOperationWithResponse(operation, params) {
   try {
-    const result = await performCrudOperation(Bandeau, operation, params);
+    const result = await performCrudOperation(Blog, operation, params);
     const response = successResponse(result);
     return response;
   } catch (error) {
     console.log(error)
-    const response = errorResponse(`Failed to ${operation} bandeau`);
+    const response = errorResponse(`Failed to ${operation} blog`);
     return response;
   }
 }
 
-async function createBandeauService(req, res) {
+async function create(req, res) {
   const formData = req.body;
   const response = await performCrudOperationWithResponse('create', formData);
   res.status(response.statusCode).json(response);
 }
 
-async function getBandeauService(req, res) {
+async function getAll(req, res) {
+  const response = await performCrudOperationWithResponse('getAll');
+  console.log(response);
+ return res.status(response.statusCode).json(response);
+}
+
+async function getOne(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getOne', { id: Id });
   console.log(response);
   return res.status(response.statusCode).json(response);
 }
 
-async function updateBandeauService(req, res) {
+async function update(req, res) {
   const { Id } = req.query;
   const formData = req.body;
   const response = await performCrudOperationWithResponse('update', { id:Id, updates:formData });
   res.status(response.statusCode).json(response);
 }
 
-async function deleteBandeauService(req, res) {
+async function deleted(req, res) {
   const { Id } = req.query;
-  await performCrudOperation(Bandeau, 'delete', { id:Id });
-  const response = successResponse(null, 'Bandeau deleted successfully');
+  await performCrudOperation(Blog, 'delete', { id:Id });
+  const response = successResponse(null, 'Blog deleted successfully');
   res.status(response.statusCode).json(response);
 }
 
 module.exports = {
-  createBandeauService,
-  getBandeauService,
-  updateBandeauService,
-  deleteBandeauService,
+  create,
+  getOne,
+  getAll,
+  update,
+  deleted,
 };

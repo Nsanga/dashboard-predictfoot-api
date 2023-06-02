@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules.
-var gripController = require('../../controllers/landingPageControllers/grip.controller');
+var gripController = require('../../controllers/landingPage/grip.controller');
 
 const gripRoutes = app => {
   app.use("/landing-page/grip", router);

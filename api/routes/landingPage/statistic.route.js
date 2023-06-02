@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules.
-var statisticController = require('../../controllers/landingPageControllers/statistic.controller');
+var statisticController = require('../../controllers/landingPage/statistic.controller');
 
 const statisticRoutes = app => {
   app.use("/landing-page/statistic", router);

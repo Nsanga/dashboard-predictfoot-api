@@ -1,56 +1,56 @@
-const About = require('../../models/landingPageModels/about.model')
+const Statistic = require('../../models/landingPage/statistic.model');
 const { performCrudOperation } = require('../crud.service');
 const { errorResponse, successResponse }  = require ('../apiResponse.service');
 
 async function performCrudOperationWithResponse(operation, params) {
   try {
-    const result = await performCrudOperation(About, operation, params);
+    const result = await performCrudOperation(Statistic, operation, params);
     const response = successResponse(result);
     return response;
   } catch (error) {
     console.log(error)
-    const response = errorResponse(`Failed to ${operation} about`);
+    const response = errorResponse(`Failed to ${operation} statistic`);
     return response;
   }
 }
 
-async function createAboutService(req, res) {
+async function create(req, res) {
   const formData = req.body;
   const response = await performCrudOperationWithResponse('create', formData);
   res.status(response.statusCode).json(response);
 }
 
-async function getAboutsService(req, res) {
+async function getAll(req, res) {
   const response = await performCrudOperationWithResponse('getAll');
   console.log(response);
  return res.status(response.statusCode).json(response);
 }
 
-async function getAboutService(req, res) {
+async function getOne(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getOne', { id: Id });
   console.log(response);
   return res.status(response.statusCode).json(response);
 }
 
-async function updateAboutService(req, res) {
+async function update(req, res) {
   const { Id } = req.query;
   const formData = req.body;
   const response = await performCrudOperationWithResponse('update', { id:Id, updates:formData });
   res.status(response.statusCode).json(response);
 }
 
-async function deleteAboutService(req, res) {
+async function deleted(req, res) {
   const { Id } = req.query;
-  await performCrudOperation(About, 'delete', { id:Id });
-  const response = successResponse(null, 'About deleted successfully');
+  await performCrudOperation(Statistic, 'delete', { id:Id });
+  const response = successResponse(null, 'Statistic deleted successfully');
   res.status(response.statusCode).json(response);
 }
 
 module.exports = {
-  createAboutService,
-  getAboutService,
-  getAboutsService,
-  updateAboutService,
-  deleteAboutService,
+  create,
+  getOne,
+  getAll,
+  update,
+  deleted,
 };

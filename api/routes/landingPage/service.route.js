@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules.
-var serviceController = require('../../controllers/landingPageControllers/service.controller');
+var serviceController = require('../../controllers/landingPage/service.controller');
 
 const serviceRoutes = app => {
   app.use("/landing-page/service", router);
