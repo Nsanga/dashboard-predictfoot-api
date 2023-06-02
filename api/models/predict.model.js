@@ -3,12 +3,12 @@ const mongoose = require('mongoose')
 const predictSchema = mongoose.Schema({
     date: {
         type: String,
-    // required: 'Please fill From Date'
+    required: 'Please fill From Date'
     },
     country: {
         name: {
             type: String,
-            // required: 'Please fill From Country'
+            required: 'Please fill From Country'
         },
         flag: {
             type: String,
@@ -91,19 +91,19 @@ const predictSchema = mongoose.Schema({
         },
         prediction: {
             type: String,
-            // required: 'Please fill From Prediction'
+            required: 'Please fill From Prediction'
         },
         coast: {
             type: Number,
-            // required: 'Please fill From Prediction'
+            required: 'Please fill From Prediction'
         },
         type_prediction: {
             type: String,
-            // required: 'Please fill From Type Prediction'
+            required: 'Please fill From Type Prediction'
         },
         author: {
             type: String,
-            // required: 'Please fill From Author'
+            required: 'Please fill From Author'
         },  
          iswin: {
              default:"null",
