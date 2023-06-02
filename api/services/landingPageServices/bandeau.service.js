@@ -20,12 +20,6 @@ async function createBandeauService(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function getBandeauxService(req, res) {
-  const response = await performCrudOperationWithResponse('getAll');
-  console.log(response);
- return res.status(response.statusCode).json(response);
-}
-
 async function getBandeauService(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getOne', { id: Id });
@@ -50,7 +44,6 @@ async function deleteBandeauService(req, res) {
 module.exports = {
   createBandeauService,
   getBandeauService,
-  getBandeauxService,
   updateBandeauService,
   deleteBandeauService,
 };

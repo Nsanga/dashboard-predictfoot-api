@@ -10,7 +10,6 @@ const bandeauRoutes = app => {
 
 
 //Get a list of all predict
-router.get('/getAll', bandeauController.getAll);
 router.get('/getOne', bandeauController.getOne);
 router.post('/create', bandeauController.create);
 router.put('/update', bandeauController.update);

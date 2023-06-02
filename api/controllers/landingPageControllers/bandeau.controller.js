@@ -1,12 +1,5 @@
 var ServiceBandeau = require('../../services/landingPageServices/bandeau.service');
 
-
-const getAll = async (req, res) => {
-     // Obtenir tous les bandeaux
-     await ServiceBandeau.getBandeauxService(req, res);
-
-};
-
 const getOne = async (req, res) => {
   // Obtenir un bandeau
   await ServiceBandeau.getBandeauService(req, res);
@@ -28,4 +21,4 @@ const deleted = async (req, res) => {
      await ServiceBandeau.deleteBandeauService(req, res);
 };
 
-module.exports = { getAll, getOne, create, update, deleted };
+module.exports = { getOne, create, update, deleted };
