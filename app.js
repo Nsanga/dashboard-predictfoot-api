@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const dbConnect = require('./api/config/dbConnect');
 var cors = require('cors');
 const appRoutes = require("./api/routes/index");
+const bodyParser = require("body-parser")
 
 
 // Connection to mongodb
@@ -15,7 +16,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors())
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 /* App Routes */
 app.use('/api/v1/', appRoutes() );
