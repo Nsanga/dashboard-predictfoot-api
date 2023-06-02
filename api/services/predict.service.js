@@ -16,7 +16,7 @@ async function performCrudOperationWithResponse(operation, params) {
 
 async function createPredictService(req, res) {
   const formData = req.body;
-  const response = await performCrudOperationWithResponse('create', formData );
+  const response = await performCrudOperationWithResponse('create', formData);
   res.status(response.statusCode).json(response);
 }
 
