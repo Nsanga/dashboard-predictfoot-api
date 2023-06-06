@@ -7,10 +7,8 @@ var cors = require('cors');
 const appRoutes = require("./api/routes/index");
 const bodyParser = require("body-parser")
 
-
 // Connection to mongodb
  dbConnect();
-
 // App initialization
 const app = express();
 app.use(express.json());
