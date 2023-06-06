@@ -1,14 +1,15 @@
 var express = require('express');
 const predictRoutes = require('./predict.route');
-const aboutRoutes = require('./landingPageRoutes/about.route');
-const bandeauRoutes = require('./landingPageRoutes/bandeau.route');
-const blogRoutes = require('./landingPageRoutes/blog.route');
-const clientRoutes = require('./landingPageRoutes/client.route');
-const forfaitRoutes = require('./landingPageRoutes/forfait.route');
-const gripRoutes = require('./landingPageRoutes/grip.route');
-const publiciteRoutes = require('./landingPageRoutes/publicite.route');
-const serviceRoutes = require('./landingPageRoutes/service.route');
-const statisticRoutes = require('./landingPageRoutes/statistic.route');
+const aboutRoutes = require('./landingPage/about.route');
+const headbandRoutes = require('./landingPage/headband.route');
+const blogRoutes = require('./landingPage/blog.route');
+const customerRoutes = require('./landingPage/customer.route');
+const planRoutes = require('./landingPage/plan.route');
+const gripRoutes = require('./landingPage/grip.route');
+const advertisementRoutes = require('./landingPage/advertisement.route');
+const serviceRoutes = require('./landingPage/service.route');
+const statisticRoutes = require('./landingPage/statistic.route');
+const homeRoutes = require('./landingPage/home.route');
 var router = express.Router();
 
 /* GET home page. */
@@ -19,13 +20,14 @@ router.get('/', function(req, res, next) {
 const appRoutes = () => {
   const app = router;
   predictRoutes(app);
+  homeRoutes(app);
   aboutRoutes(app);
-  bandeauRoutes(app);
+  headbandRoutes(app);
   blogRoutes(app);
-  clientRoutes(app);
-  forfaitRoutes(app);
+  customerRoutes(app);
+  planRoutes(app);
   gripRoutes(app);
-  publiciteRoutes(app);
+  advertisementRoutes(app);
   serviceRoutes(app);
   statisticRoutes(app);
   return app;
