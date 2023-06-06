@@ -9,6 +9,7 @@ const gripRoutes = require('./landingPage/grip.route');
 const advertisementRoutes = require('./landingPage/advertisement.route');
 const serviceRoutes = require('./landingPage/service.route');
 const statisticRoutes = require('./landingPage/statistic.route');
+const homeRoutes = require('./landingPage/home.route');
 var router = express.Router();
 
 /* GET home page. */
@@ -19,6 +20,7 @@ router.get('/', function(req, res, next) {
 const appRoutes = () => {
   const app = router;
   predictRoutes(app);
+  homeRoutes(app);
   aboutRoutes(app);
   headbandRoutes(app);
   blogRoutes(app);

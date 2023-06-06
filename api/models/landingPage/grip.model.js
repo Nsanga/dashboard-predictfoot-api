@@ -21,6 +21,10 @@ const gripSchema = mongoose.Schema({
         type: String,
         required: 'Please fill From Description'
     },
+    image: {
+        type: String,
+        default: null 
+    }
 
 })
 

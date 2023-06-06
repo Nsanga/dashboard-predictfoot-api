@@ -23,11 +23,11 @@ const blogSchema = mongoose.Schema({
     },
     profile: {
         type: String,
-        required: 'Please fill From Profile'
+        default: null 
     },
     imageArticle: {
         type: String,
-        required: 'Please fill From ImageArticle'
+        default: null 
     },
 
 })

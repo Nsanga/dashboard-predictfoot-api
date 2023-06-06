@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const serviceSchema = mongoose.Schema({
     number: {
-        type: Number,
+        type: String,
         required: 'Please fill From Number'
     },
     title: {

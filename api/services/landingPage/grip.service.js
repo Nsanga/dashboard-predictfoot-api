@@ -1,6 +1,7 @@
 const Grip = require('../../models/landingPage/grip.model')
 const { performCrudOperation } = require('../crud.service');
 const { errorResponse, successResponse }  = require ('../apiResponse.service');
+const { uploadFile } = require('../upload.service')
 
 async function performCrudOperationWithResponse(operation, params) {
   try {
@@ -15,9 +16,28 @@ async function performCrudOperationWithResponse(operation, params) {
 }
 
 async function create(req, res) {
-  const formData = req.body;
-  const response = await performCrudOperationWithResponse('create', formData);
-  res.status(response.statusCode).json(response);
+  try {
+    const formData = req.body;
+    const file = req.file;
+
+    // Upload the file to Amazon S3
+    const imageUrl = await uploadFile(file, 'grip'); 
+    console.log('Uploaded image URL:', imageUrl);
+
+    // Update the formData with the S3 image URL
+    formData.image = imageUrl;
+
+    // Create the Grip document
+    const grip = new Grip(formData);
+    const result = await grip.save();
+
+    const response = successResponse(result);
+    res.status(response.statusCode).json(response);
+  } catch (error) {
+    console.error('Failed to create grip:', error);
+    const response = errorResponse('Failed to create grip');
+    res.status(response.statusCode).json(response);
+  }
 }
 
 async function getAll(req, res) {
@@ -34,10 +54,33 @@ async function getOne(req, res) {
 }
 
 async function update(req, res) {
-  const { Id } = req.query;
-  const formData = req.body;
-  const response = await performCrudOperationWithResponse('update', { id:Id, updates:formData });
-  res.status(response.statusCode).json(response);
+  try {
+    const { Id } = req.query;
+    const formData = req.body;
+    const file = req.file;
+
+    // If a new file is provided, upload it to Amazon S3
+    let imageUrl;
+    if (file) {
+      imageUrl = await uploadFile(file, 'grip');
+      console.log('Uploaded image URL:', imageUrl);
+    }
+
+    // Update the formData with the new S3 image URL if available
+    if (imageUrl) {
+      formData.image = imageUrl;
+    }
+
+    // Update the Grip document
+    const result = await Grip.findByIdAndUpdate(Id, formData, { new: true });
+
+    const response = successResponse(result);
+    res.status(response.statusCode).json(response);
+  } catch (error) {
+    console.error('Failed to update grip:', error);
+    const response = errorResponse('Failed to update grip');
+    res.status(response.statusCode).json(response);
+  }
 }
 
 async function deleted(req, res) {

@@ -11,7 +11,7 @@ const aboutSchema = mongoose.Schema({
     },
     image: {
         type: String,
-    required: 'Please fill From Image'
+        default: null 
     },
     
 })

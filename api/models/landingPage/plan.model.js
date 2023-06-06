@@ -6,11 +6,11 @@ const forfaitSchema = mongoose.Schema({
         required: 'Please fill From Type'
     },
     duration: {
-        type: Number,
+        type: String,
         required: 'Please fill From Duration'
     },
     price: {
-        type: Number,
+        type: String,
         required: 'Please fill From Price'
     },
 

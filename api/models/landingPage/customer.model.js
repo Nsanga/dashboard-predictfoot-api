@@ -11,7 +11,7 @@ const clientSchema = mongoose.Schema({
     },
     profile: {
         type: String,
-        required: 'Please fill From Profile'
+        default: null 
     },
 
 })
