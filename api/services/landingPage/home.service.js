@@ -17,36 +17,18 @@ async function performCrudOperationWithResponse(operation, params) {
 
 async function create(req, res) {
     try {
-        const formData = req.body;
-        const file = req.file;
-
-        // Upload the file to Amazon S3
-        const imageUrl = await uploadFile(file, 'Landing-page');
-        console.log('Uploaded image URL:', imageUrl);
-
-        // Determine the field name based on the formData
-        let fieldName;
-        if (formData.section === 'headband') {
-            fieldName = 'headbandImage';
-        } else if (formData.section === 'customer') {
-            fieldName = 'customerProfile';
-        } else if (formData.section === 'advertisement') {
-            fieldName = 'advertisementImage';
-        } else if (formData.section === 'about') {
-            fieldName = 'aboutImage';
-        } else if (formData.section === 'grip') {
-            fieldName = 'gripImage';
+        let formData = req.body;
+        const imageFields = ['headbandImage', 'advertisementImage', 'aboutImage', 'gripImage'];
+    // Vérifier et uploader les images si elles existent
+        for (const field of imageFields) {
+        if (req.files[field]) {
+            const fileName = await uploadFile(req.files[field][0], 'Landing-page');
+            console.log('Nom du fichier sauvegardé:', fileName);
+            formData[field] = fileName;
         }
-
-        // Update the formData with the S3 image URL
-        formData[fieldName] = imageUrl;
-
-        // Create the Home document
-        const home = new Home(formData);
-        const result = await home.save();
-
-        const response = successResponse(result);
-        res.status(response.statusCode).json(response);
+        }
+        const response = await performCrudOperationWithResponse('create', formData);
+        res.status(200).json(response);
     } catch (error) {
         console.error('Failed to create home:', error);
         const response = errorResponse('Failed to create home');
