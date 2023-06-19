@@ -1,7 +1,8 @@
 const Blog = require('../../models/landingPage/blog.model')
 const { performCrudOperation } = require('../crud.service');
-const { errorResponse, successResponse }  = require ('../apiResponse.service');
-const { uploadFiles } = require('../upload.service')
+const { errorResponse, successResponse } = require('../apiResponse.service');
+const { uploadFile } = require('../upload.service');
+const paginate = require('../paginate.service');
 
 async function performCrudOperationWithResponse(operation, params) {
   try {
@@ -17,34 +18,54 @@ async function performCrudOperationWithResponse(operation, params) {
 
 async function create(req, res) {
   try {
-    const formData = req.body;
-    const files = req.files;
-    const folder = 'blog';
+    let formData = req.body;
+    const imageFields = ['profile', 'imageArticle'];
 
-    // Upload the images one by one using uploadFiles
-    const uploadedImages = await uploadFiles(files, folder);
+    // Vérifier et uploader les images si elles existent
+    for (const field of imageFields) {
+      if (req.files[field]) {
+        const fileLocation = await uploadFile(req.files[field][0], 'Blog');
+        console.log('Nom du fichier sauvegardé:', fileLocation);
+        formData[field] = fileLocation;
 
-    // Update the formData with the uploaded image URLs
-    formData.images = uploadedImages;
+      }
+    }
 
-    // Create the Blog document
-    const blog = new Blog(formData);
-    const result = await blog.save();
-
-    const response = successResponse(result);
-    res.status(response.statusCode).json(response);
+    console.log('formData', formData);
+    const response = await performCrudOperationWithResponse('create', formData);
+    res.status(200).json(response);
   } catch (error) {
-    console.error('Failed to create blog:', error);
-    const response = errorResponse('Failed to create blog');
+    console.error('Failed to create home:', error);
+    const response = errorResponse('Failed to create home');
     res.status(response.statusCode).json(response);
   }
 }
 
 async function getAll(req, res) {
-  const response = await performCrudOperationWithResponse('getAll');
-  console.log(response);
- return res.status(response.statusCode).json(response);
+  try {
+    const response = await performCrudOperationWithResponse('getAll');
+    const articles = response.data;
+
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10; // Limite d'articles par page, par défaut 10
+
+    const paginatedResults = paginate(articles, page, limit);
+
+    return res.status(response.statusCode).json({
+      page: paginatedResults.page,
+      limit: paginatedResults.limit,
+      totalItems: paginatedResults.totalItems,
+      totalPages: paginatedResults.totalPages,
+      results: paginatedResults.results
+    });
+  } catch (error) {
+    console.error('Failed to get articles:', error);
+    const response = errorResponse('Failed to get articles');
+    return res.status(response.statusCode).json(response);
+  }
 }
+
+
 
 async function getOne(req, res) {
   const { Id } = req.query;
@@ -57,21 +78,18 @@ async function update(req, res) {
   try {
     const { Id } = req.query;
     const formData = req.body;
-    const file = req.file;
+    const imageFields = ['profile', 'imageArticle'];
 
-    // If a new file is provided, upload it to Amazon S3
-    let imageUrl;
-    if (file) {
-      imageUrl = await uploadFile(file, 'blog');
-      console.log('Uploaded image URL:', imageUrl);
+    // Vérifier et uploader les images si elles existent
+    for (const field of imageFields) {
+      if (req.files && req.files[field]) {
+        const fileLocation = await uploadFile(req.files[field][0], 'Blog');
+        console.log('Uploaded image URL:', fileLocation);
+        formData[field] = fileLocation;
+      }
     }
 
-    // Update the formData with the new S3 image URL if available
-    if (imageUrl) {
-      formData.image = imageUrl;
-    }
-
-    // Update the Blog document
+    // Mettre à jour le document Home
     const result = await Blog.findByIdAndUpdate(Id, formData, { new: true });
 
     const response = successResponse(result);
@@ -85,7 +103,7 @@ async function update(req, res) {
 
 async function deleted(req, res) {
   const { Id } = req.query;
-  await performCrudOperation(Blog, 'delete', { id:Id });
+  await performCrudOperation(Blog, 'delete', { id: Id });
   const response = successResponse(null, 'Blog deleted successfully');
   res.status(response.statusCode).json(response);
 }

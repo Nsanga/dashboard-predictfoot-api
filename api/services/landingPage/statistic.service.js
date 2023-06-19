@@ -20,12 +20,6 @@ async function create(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function getAll(req, res) {
-  const response = await performCrudOperationWithResponse('getAll');
-  console.log(response);
- return res.status(response.statusCode).json(response);
-}
-
 async function getOne(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getOne', { id: Id });
@@ -50,7 +44,6 @@ async function deleted(req, res) {
 module.exports = {
   create,
   getOne,
-  getAll,
   update,
   deleted,
 };
