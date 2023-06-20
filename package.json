@@ -47,6 +47,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "webpack-cli": "^5.1.4",
     "yarn-upgrade-all": "^0.7.2"
   }
 }
