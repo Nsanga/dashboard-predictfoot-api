@@ -15,7 +15,7 @@ const blogRoutes = app => {
 
 //Get a list of all predict
 router.get('/getAll', blogController.getAll);
-router.get('/getOne', blogController.getOne);
+router.get('/getById', blogController.getById);
 router.post('/create', uploads.fields(imageFields.map((field) => ({ name: field }))), blogController.create);
 router.put('/update', uploads.fields(imageFields.map((field) => ({ name: field }))), blogController.update);
 router.delete('/delete', blogController.deleted);

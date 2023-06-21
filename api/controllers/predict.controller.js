@@ -7,6 +7,12 @@ const getAll = async (req, res) => {
 
 };
 
+const getOne = async (req, res) => {
+     // Obtenir tous les prédictions
+     await ServicePredict.getPredictsServiceByDate(req, res);
+
+};
+
 const create = async (req, res) => {
      // Créer une prediction
      await ServicePredict.createPredictService(req, res);
@@ -22,4 +28,4 @@ const deleted = async (req, res) => {
      await ServicePredict.deletePredictService(req, res);
 };
 
-module.exports = { getAll, create, update, deleted };
+module.exports = { getAll, getOne, create, update, deleted };

@@ -14,7 +14,7 @@ const customerRoutes = app => {
 
 //Get a list of all predict
 router.get('/getAll', customerController.getAll);
-router.get('/getOne', customerController.getOne);
+router.get('/getById', customerController.getById);
 router.post('/create', uploads.single('image'), customerController.create);
 router.put('/update', uploads.single('image'), customerController.update);
 router.delete('/delete', customerController.deleted);

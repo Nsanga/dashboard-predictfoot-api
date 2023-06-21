@@ -46,9 +46,9 @@ async function getAll(req, res) {
  return res.status(response.statusCode).json(response);
 }
 
-async function getOne(req, res) {
+async function getById(req, res) {
   const { Id } = req.query;
-  const response = await performCrudOperationWithResponse('getOne', { id: Id });
+  const response = await performCrudOperationWithResponse('getById', { id: Id });
   console.log(response);
   return res.status(response.statusCode).json(response);
 }
@@ -92,7 +92,7 @@ async function deleted(req, res) {
 
 module.exports = {
   create,
-  getOne,
+  getById,
   getAll,
   update,
   deleted,

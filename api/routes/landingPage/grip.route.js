@@ -14,7 +14,7 @@ const gripRoutes = app => {
 
 //Get a list of all predict
 router.get('/getAll', gripController.getAll);
-router.get('/getOne', gripController.getOne);
+router.get('/getById', gripController.getById);
 router.post('/create', uploads.single('image'), gripController.create);
 router.put('/update', uploads.single('image'), gripController.update);
 router.delete('/delete', gripController.deleted);

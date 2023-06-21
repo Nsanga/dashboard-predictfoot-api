@@ -1,8 +1,8 @@
 var ServiceStatistic = require('../../services/landingPage/statistic.service');
 
-const getOne = async (req, res) => {
+const getById = async (req, res) => {
   // Get a statistic
-  await ServiceStatistic.getOne(req, res);
+  await ServiceStatistic.getById(req, res);
 
 };
 
@@ -21,4 +21,4 @@ const deleted = async (req, res) => {
      await ServiceStatistic.deleted(req, res);
 };
 
-module.exports = { getOne, create, update, deleted };
+module.exports = { getById, create, update, deleted };

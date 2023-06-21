@@ -7,9 +7,9 @@ const getAll = async (req, res) => {
 
 };
 
-const getOne = async (req, res) => {
+const getById = async (req, res) => {
   // Get a customer
-  await ServiceCustomer.getOne(req, res);
+  await ServiceCustomer.getById(req, res);
 
 };
 
@@ -28,4 +28,4 @@ const deleted = async (req, res) => {
      await ServiceCustomer.deleted(req, res);
 };
 
-module.exports = { getAll, getOne, create, update, deleted };
+module.exports = { getAll, getById, create, update, deleted };
