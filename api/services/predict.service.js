@@ -21,7 +21,7 @@ async function createPredictService(req, res) {
 }
 
 async function getPredictsService(req, res) {
-  const response = await performCrudOperationWithResponse('getAll');
+  const response = await performCrudOperationWithResponse('getAll'); 
   console.log(response);
  return res.status(response.statusCode).json(response);
 }
