@@ -43,7 +43,7 @@ async function getPredictsServiceByDate(req, res) {
 
     if (predictions.length === 0) {
       // Aucun élément trouvé, renvoyer un message
-      return res.status(200).json({ message: 'Aucune prédictions correspondante.' });
+      return res.status(200).json({ message: 'Aucune prédiction correspondante.' });
     }
 
     const paginatedResults = paginate(predictions, page, limit);
