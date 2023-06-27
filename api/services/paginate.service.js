@@ -7,6 +7,7 @@ function paginate(array, page = 1, limit = 10) {
   return {
     page: page,
     limit: limit,
+    totaItemsPerPage: limit,
     totalItems: array.length,
     totalPages: Math.ceil(array.length / limit),
     results: results

@@ -22,11 +22,18 @@ async function createPredictService(req, res) {
 }
 
 async function getPredictsServiceByDate(req, res) {
-  const { dateFrom, dateTo, type, page, limit } = req.query;
+  const { dateFrom, dateTo, type, search  } = req.query;
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
 
   let data = {};
 
   try {
+    if (!dateFrom) {
+      const response = errorResponse('Missing dateFrom parameter');
+      return res.status(response.statusCode).json(response);
+    }
+
     if (dateFrom && !dateTo) {
       // Filtrer les données pour la journée spécifiée
       data.date = { $regex: new RegExp(`^${dateFrom}`) };
@@ -39,22 +46,35 @@ async function getPredictsServiceByDate(req, res) {
       data.type_prediction = type;
     }
 
+    if (search) {
+      // Rechercher dans homeTeam ou awayTeam
+      data.$or = [
+        { 'fixture.homeTeam.team_name': { $regex: new RegExp(search, 'i') } },
+        { 'fixture.awayTeam.team_name': { $regex: new RegExp(search, 'i') } }
+      ];
+    }
+
     const predictions = await performCrudOperation(Predict, 'get', data);
 
     if (predictions.length === 0) {
       // Aucun élément trouvé, renvoyer un message
-      return res.status(200).json({ message: 'Aucune prédiction correspondante.' });
+      const response = successResponse('Aucune prédiction correspondante.');
+      return res.status(response.statusCode).json(response);
     }
 
     const paginatedResults = paginate(predictions, page, limit);
 
-    return res.status(200).json({
+    const response = successResponse({
       page: paginatedResults.page,
       limit: paginatedResults.limit,
+      totaItemsPerPage: paginatedResults.limit,
       totalItems: paginatedResults.totalItems,
       totalPages: paginatedResults.totalPages,
       results: paginatedResults.results
     });
+
+    return res.status(response.statusCode).json(response);
+
   } catch (error) {
     console.error('Failed to get predicts:', error);
     const response = errorResponse('Failed to get predicts');
