@@ -10,7 +10,7 @@ async function performCrudOperation(model, operation, data) {
       return model.findById(data.id);
     case 'getAll':
       return model.find();
-    case 'getOne':
+    case 'get':
       return model.find(data);
     default:
       throw new Error('Invalid operation');
