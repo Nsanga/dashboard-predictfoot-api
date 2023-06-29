@@ -18,6 +18,7 @@ async function performCrudOperationWithResponse(operation, params) {
 async function createPredictService(req, res) {
   const formData = req.body;
   const response = await performCrudOperationWithResponse('create', formData);
+  console.log(response)
   res.status(response.statusCode).json(response);
 }
 
@@ -59,6 +60,7 @@ async function getPredictsServiceByDate(req, res) {
     if (predictions.length === 0) {
       // Aucun élément trouvé, renvoyer un message
       const response = successResponse('Aucune prédiction correspondante.');
+      console.log(response)
       return res.status(response.statusCode).json(response);
     }
 
