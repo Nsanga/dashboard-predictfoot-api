@@ -51,7 +51,7 @@ async function getPredictsServiceByDate(req, res) {
       // Rechercher dans homeTeam ou awayTeam
       data.$or = [
         { 'fixture.homeTeam.team_name': { $regex: new RegExp(search, 'i') } },
-        { 'fixture.awayTeam.team_name': { $regex: new RegExp(search, 'i') } }
+        { 'fixture.awayTeam.team_name': { $regex: new RegExp(search, 'i') } } 
       ];
     }
 
