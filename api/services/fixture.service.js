@@ -1,4 +1,5 @@
 const moment = require('moment');
+const { jsonFileWriter } = require('./jsonFileWriter');
 
 const getRequestConfig = (param) => {
     const config = {
@@ -16,28 +17,44 @@ const getRequestConfig = (param) => {
     return config;
   };
   
-  const getFixturesForDate = (date) => {
-    const config = getRequestConfig(date);
+  const getDailyFixtures = async (days) => {
+    try {
+      const dates = [];
+      const today = moment().format('YYYY-MM-DD');
+      dates.push(today);
   
-    return fetch(config.url, {
-      method: config.method,
-      headers: config.headers
-    })
-      .then((response) => {
+      for (let i = 1; i < days; i++) {
+        const nextDate = moment().add(i, 'days').format('YYYY-MM-DD');
+        dates.push(nextDate);
+      }
+  
+      const fixtures = [];
+  
+      for (const [index, date] of dates.entries()) {
+        const config = getRequestConfig(date);
+        const response = await fetch(config.url, {
+          method: config.method,
+          headers: config.headers
+        });
+  
         if (response.ok) {
-          return response.json();
+          const data = await response.json();
+          const restructuredData = restructureApiData(data);
+          fixtures.push(restructuredData);
+          const filename = `./api/data/api-football/fixtures_${index}.json`; // Nom du fichier basé sur la date
+          jsonFileWriter(filename, restructuredData);
         } else {
           throw new Error(`Error occurred while fetching fixtures for ${date}!`);
         }
-      })
-      .then((data) => {
-        return restructureApiData(data);
-      })
-      .catch((error) => {
-        console.log(`Error occurred while fetching fixtures for ${date}!`);
-        return Promise.reject(error);
-      });
+      }
+  
+      return fixtures;
+    } catch (error) {
+      console.log(`Error occurred while fetching fixtures: ${error.message}`);
+      return Promise.reject(error);
+    }
   };
+  
   
 const restructureApiData = (dataApi) => {
   const fixtures = dataApi.api.fixtures;
@@ -83,5 +100,5 @@ const restructureApiData = (dataApi) => {
 };
 
 module.exports = {
-    getFixturesForDate
+  getDailyFixtures
 };

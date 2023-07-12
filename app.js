@@ -5,9 +5,15 @@ const cookieParser = require("cookie-parser");
 const dbConnect = require('./api/config/dbConnect');
 var cors = require('cors');
 const appRoutes = require("./api/routes/index");
-
+const scheduleTask =require("./api/services/job/scheduleTask")
+const fixtures = require("./api/services/fixture.service")
 const bodyParser = require("body-parser");
 
+
+
+
+//get daily data api-football
+scheduleTask.scheduleTask("00 05 00 * * *",() => fixtures.getDailyFixtures(3));
 
 // Connection to mongodb
  dbConnect();
