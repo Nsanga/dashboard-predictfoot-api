@@ -1,5 +1,6 @@
 var express = require('express');
 const predictRoutes = require('./predict.route');
+const fixtureRoutes = require('./fixture.route');
 const aboutRoutes = require('./landingPage/about.route');
 const headbandRoutes = require('./landingPage/headband.route');
 const blogRoutes = require('./landingPage/blog.route');
@@ -20,6 +21,7 @@ router.get('/', function(req, res, next) {
 const appRoutes = () => {
   const app = router;
   predictRoutes(app);
+  fixtureRoutes(app);
   homeRoutes(app);
   aboutRoutes(app);
   headbandRoutes(app);

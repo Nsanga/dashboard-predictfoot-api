@@ -3,30 +3,29 @@ const express = require('express');
 const createError = require("http-errors");
 const cookieParser = require("cookie-parser");
 const dbConnect = require('./api/config/dbConnect');
-var cors = require('cors');
+const cors = require('cors');
 const appRoutes = require("./api/routes/index");
-const scheduleTask =require("./api/services/job/scheduleTask")
-const fixtures = require("./api/services/fixture.service")
+const scheduleTask = require("./api/services/job/scheduleTask");
+const fixtures = require("./api/services/fixture.service");
 const bodyParser = require("body-parser");
 
+// Get daily data from api-football
+scheduleTask.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(3));
 
+// Connection to MongoDB
+dbConnect();
 
-
-//get daily data api-football
-scheduleTask.scheduleTask("00 05 00 * * *",() => fixtures.getDailyFixtures(3));
-
-// Connection to mongodb
- dbConnect();
 // App initialization
 const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-//configuration cors origin
+// Configure CORS origin
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -40,16 +39,25 @@ app.use((req, res, next) => {
   next();
 });
 
-/* App Routes */
-app.use('/api/v1/', appRoutes() );
+// App Routes
+app.use('/api/v1/', appRoutes());
 
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    next(createError(404));
+// Custom 404 error handler
+app.use((req, res, next) => {
+  next(createError(404, 'Route not found'));
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  res.status(err.status || 500).json({
+    error: {
+      status: err.status || 500,
+      message: err.message || 'Internal Server Error',
+    },
   });
-
+});
 
 // Start the app
-app.listen(process.env.PORT || 5000, function() {
-    console.log("Server started")
-})
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server started");
+});
