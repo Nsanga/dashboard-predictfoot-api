@@ -35,7 +35,7 @@ async function create(req, res) {
     res.status(response.statusCode).json(response);
   } catch (error) {
     console.error('Failed to create grip:', error);
-    const response = errorResponse('Failed to create grip');
+    const response = errorResponse(`Failed to create grip`);
     res.status(response.statusCode).json(response);
   }
 }

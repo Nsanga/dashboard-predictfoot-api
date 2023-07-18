@@ -9,12 +9,7 @@ const getRequestConfig = (param) => {
       method: "GET",
       url: `https://${process.env.RAPID_API_HOST}/v2/fixtures/date/${param}`,
       headers: {
-        "content-type": "application/octet-stream",
-        "x-rapidapi-host": process.env.RAPID_API_HOST,
-        "x-rapidapi-key": process.env.RAPID_API_KEY,
-      },
-      query: {
-        timezone: "Europe%2FLondon"
+        "X-RapidAPI-Key": process.env.RAPID_API_KEY,
       }
     };
     return config;
@@ -23,11 +18,11 @@ const getRequestConfig = (param) => {
   const getDailyFixtures = async (days) => {
     try {
       const dates = [];
-      const today = moment().format('YYYY-MM-DD');
+      const today = moment().subtract(1, 'day').format('YYYY-MM-DD');
       dates.push(today);
       const directory = path.dirname("./api/data/api-football/");
       await fs.emptyDir(directory);
-      for (let i = 1; i < days; i++) {
+      for (let i = 0; i <= days; i++) {
         const nextDate = moment().add(i, 'days').format('YYYY-MM-DD');
         dates.push(nextDate);
       }
@@ -81,7 +76,11 @@ const restructureApiData = (dataApi) => {
                 "event_date": moment(itemmatch.event_date),
                 "venue": itemmatch.venue,
                 "day saison": itemmatch.round,
-                "status": "PENDING"
+                ...(itemmatch.status && { "status": itemmatch.status }),
+                ...(itemmatch.statusShort && { "statusShort": itemmatch.statusShort }),
+                ...(itemmatch.goalsHomeTeam && { "goalsHomeTeam": itemmatch.goalsHomeTeam }),
+                ...(itemmatch.goalsAwayTeam && { "goalsAwayTeam": itemmatch.goalsAwayTeam }),
+                ...(itemmatch.score && { "score": itemmatch.score })
               });
             }
           });
@@ -205,9 +204,101 @@ async function findMatchesByChampionship(req, res) {
   }
 }
 
+function isPredictionCorrect(score, prediction) {
+  const predictionMap = {
+    "Home Win": () => score.goalsHomeTeam > score.goalsAwayTeam,
+    "Away Win": () => score.goalsAwayTeam > score.goalsHomeTeam,
+    "Draw": () => score.goalsHomeTeam === score.goalsAwayTeam,
+    "Double Chance Home": () => score.goalsHomeTeam >= score.goalsAwayTeam,
+    "Double Chance Away": () => score.goalsAwayTeam >= score.goalsHomeTeam,
+    "Two Teams Goals": () => score.goalsHomeTeam > 0 && score.goalsAwayTeam > 0,
+    "Two Teams Don't Goals": () => score.goalsHomeTeam === 0 || score.goalsAwayTeam === 0,
+    "Over 0.5": () => score.goalsHomeTeam > 0 || score.goalsAwayTeam > 0,
+    "Under 0.5": () => score.goalsHomeTeam === 0 && score.goalsAwayTeam === 0,
+    "Over 1.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 1,
+    "Under 1.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 1,
+    "Over 2.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 2,
+    "Under 2.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 2,
+    "Over 3.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 3,
+    "Under 3.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 3,
+  };
+
+  if (predictionMap.hasOwnProperty(prediction)) {
+    return predictionMap[prediction]();
+  }
+
+  return false;
+}
+
+async function correctPreviousDayEvents() {
+  try {
+    const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
+    const previousDayEventsUrl = `http://localhost:5000/api/v1/predict/getByDate?date=${yesterday}`;
+    const response = await fetch(previousDayEventsUrl);
+    const { success, data: previousDayEvents } = await response.json();
+
+    if (!success || !Array.isArray(previousDayEvents)) {
+      throw new Error('Failed to retrieve previous day events');
+    }
+
+    const pathFile = await findFileByDate('./api/data/api-football', yesterday);
+    const data = fs.readFileSync(pathFile);
+    const correctedMatchesResponse = JSON.parse(data);
+    const { country: [{ championship: [{ matches: correctedMatches }] }] } = correctedMatchesResponse;
+
+    for (const event of previousDayEvents) {
+      const fixtureId = event.fixture.fixture_id;
+      const correctedMatch = correctedMatches.find(match => match.fixture_id === fixtureId);
+
+      if (correctedMatch) {
+        const updateUrl = `http://localhost:5000/api/v1/predict/update?fixture_id=${fixtureId}`;
+        await fetch(updateUrl, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ fixtures: correctedMatch }),
+        });
+        console.log(`Event corrected for fixture ID ${fixtureId}`);
+      }
+    }
+
+    console.log('Event correction completed successfully.');
+  } catch (error) {
+    console.error('Error while correcting events:', error.message);
+  }
+}
+
+
+async function validateFixturesYesterday() {
+  try {
+    const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
+    const pathFile = await findFileByDate("./api/data/api-football",yesterday);
+    const data = fs.readFileSync(pathFile);
+    const rawdata = JSON.parse(data);
+    const filter =  await SearchFixturesAndUpdateByFixtureIds([983794],rawdata);
+    console.log("filter :",filter)
+    // const response = await fetch(`http://localhost:5000/api/v1/predict/getByDate?date=2020-12-18`, {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   }
+    // });
+    // if (response.ok) {
+    //   const data = await response.json();
+    //   const fixtureIds = c.map(obj => obj.fixture.fixture_id);
+    // }
+    
+  } catch (error) {
+    console.log(error)
+    const response = errorResponse(`Failed validate list fixture${error}`);
+  }
+}
+
 module.exports = {
   getDailyFixtures,
   findCountriesByDate,
+  correctPreviousDayEvents,
   findChampionshipsByCountry,
   findMatchesByChampionship
 };

@@ -11,7 +11,7 @@ const bodyParser = require("body-parser");
 
 // Get daily data from api-football
 scheduleTask.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(3));
-
+// fixtures.correctPreviousDayEvents()
 // Connection to MongoDB
 dbConnect();
 

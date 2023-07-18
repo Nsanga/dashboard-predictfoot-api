@@ -10,7 +10,7 @@ const predictRoutes = app => {
 
 
 //route prediction
-router.get('/getAll', predictController.getAll);
+router.get('/getByDate', predictController.getByDate);
 router.post('/create', predictController.create);
 router.put('/update', predictController.update);
 router.delete('/delete', predictController.deleted);
