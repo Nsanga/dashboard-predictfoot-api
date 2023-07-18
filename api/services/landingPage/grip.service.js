@@ -19,7 +19,8 @@ async function create(req, res) {
   try {
     const formData = req.body;
     const file = req.file;
-
+    console.log("file",file)
+    console.log("formData",formData)
     // Upload the file to Amazon S3
     const imageUrl = await uploadFile(file, 'grip'); 
     console.log('Uploaded image URL:', imageUrl);
@@ -35,7 +36,7 @@ async function create(req, res) {
     res.status(response.statusCode).json(response);
   } catch (error) {
     console.error('Failed to create grip:', error);
-    const response = errorResponse(`Failed to create grip`);
+    const response = errorResponse('Failed to create grip');
     res.status(response.statusCode).json(response);
   }
 }
