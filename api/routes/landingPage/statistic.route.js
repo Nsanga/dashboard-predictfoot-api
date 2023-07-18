@@ -13,7 +13,7 @@ const statisticRoutes = app => {
 router.get('/getById', statisticController.getById);
 router.post('/create', statisticController.create);
 router.put('/update', statisticController.update);
-router.delete('/delete', statisticController.deleted);
+router.delete('/delete', statisticController.deleted); 
 
 
 }

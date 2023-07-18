@@ -21,7 +21,7 @@ const uploadFile = (file, folder) => {
           reject(err);
         } else {
           const imageUrl = data.Location;
-          resolve(imageUrl);
+          resolve(imageUrl); 
         }
       });
     });

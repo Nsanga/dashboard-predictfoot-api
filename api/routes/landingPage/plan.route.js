@@ -16,7 +16,6 @@ router.post('/create', planController.create);
 router.put('/update', planController.update);
 router.delete('/delete', planController.deleted);
 
-
 }
 
 module.exports = planRoutes;

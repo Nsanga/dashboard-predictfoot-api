@@ -57,7 +57,7 @@ async function update(req, res) {
     let imageUrl;
     if (file) {
       imageUrl = await uploadFile(file, 'headband');
-      console.log('Uploaded image URL:', imageUrl);
+      console.log('Uploaded image URL:', imageUrl); 
     }
 
     // Update the formData with the new S3 image URL if available
@@ -72,7 +72,7 @@ async function update(req, res) {
     res.status(response.statusCode).json(response);
   } catch (error) {
     console.error('Failed to update headband:', error);
-    const response = errorResponse('Failed to update headband');
+    const response = errorResponse('Failed to update headband'); 
     res.status(response.statusCode).json(response);
   }
 }
