@@ -9,11 +9,14 @@ const scheduleTask = require("./api/services/job/scheduleTask");
 const fixtures = require("./api/services/fixture.service");
 const bodyParser = require("body-parser");
 
-// Get daily data from api-football
-scheduleTask.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(3));
-// fixtures.correctPreviousDayEvents()
 // Connection to MongoDB
 dbConnect();
+
+
+// Get daily data from api-football
+scheduleTask.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(2));
+scheduleTask.scheduleTask("00 05 01 * * *", () => fixtures.correctPreviousDayEvents());
+scheduleTask.scheduleTask("00 05 02 * * *", () => fixtures.correctPreviousDayEvents());
 
 // App initialization
 const app = express();

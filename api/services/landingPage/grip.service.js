@@ -19,8 +19,6 @@ async function create(req, res) {
   try {
     const formData = req.body;
     const file = req.file;
-    console.log("file",file)
-    console.log("formData",formData)
     // Upload the file to Amazon S3
     const imageUrl = await uploadFile(file, 'grip'); 
     console.log('Uploaded image URL:', imageUrl);

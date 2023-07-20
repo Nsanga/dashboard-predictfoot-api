@@ -20,12 +20,11 @@ async function createPredictService(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function getByDatePredictService(req, res) {
+async function getByDatePredictService(req) {
   const { date } = req.query;
   try {
     const response = await performCrudOperationWithResponse('getByDate',{date:date});
-    console.log(response);
-    return res.status(response.statusCode).json(response);
+    return response;
   } catch (error) {
     console.log(error)
     const response = errorResponse(`Failed to get list predict of date : ${date}`);
@@ -39,14 +38,20 @@ async function getOnePredictService(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function updatePredictService(req, res) {
-  const { fixture_id } = req.query;
-  const formData = req.body;
-  const response = await performCrudOperationWithResponse('update', {
-    filter: { 'fixture.fixture_id': fixture_id },
-    updates: formData
-  });
-  res.status(response.statusCode).json(response);
+async function updatePredictService(req) {
+  try {
+    const { fixture_id } = req.query;
+    const formData = req.body;
+    const response = await performCrudOperationWithResponse('update', {
+      filter: { 'fixture.fixture_id': fixture_id },
+      updates: formData
+    });
+    return response;
+  } catch (error) {
+    console.log(error)
+    const response = errorResponse(`Failed to update predict : ${fixture_id}`);
+    return response;
+  }
 }
 
 async function deletePredictService(req, res) {

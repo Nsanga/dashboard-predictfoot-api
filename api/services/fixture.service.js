@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { jsonFileWriter } = require('./jsonFileWriter');
 const { errorResponse, successResponse }  = require ('./apiResponse.service');
-
+const {getByDatePredictService,updatePredictService} = require ('./predict.service')
 const getRequestConfig = (param) => {
     const config = {
       method: "GET",
@@ -205,37 +205,35 @@ async function findMatchesByChampionship(req, res) {
 }
 
 function isPredictionCorrect(score, prediction) {
+  const [goalsHomeTeam, goalsAwayTeam] = score.split('-').map(Number);
+
   const predictionMap = {
-    "Home Win": () => score.goalsHomeTeam > score.goalsAwayTeam,
-    "Away Win": () => score.goalsAwayTeam > score.goalsHomeTeam,
-    "Draw": () => score.goalsHomeTeam === score.goalsAwayTeam,
-    "Double Chance Home": () => score.goalsHomeTeam >= score.goalsAwayTeam,
-    "Double Chance Away": () => score.goalsAwayTeam >= score.goalsHomeTeam,
-    "Two Teams Goals": () => score.goalsHomeTeam > 0 && score.goalsAwayTeam > 0,
-    "Two Teams Don't Goals": () => score.goalsHomeTeam === 0 || score.goalsAwayTeam === 0,
-    "Over 0.5": () => score.goalsHomeTeam > 0 || score.goalsAwayTeam > 0,
-    "Under 0.5": () => score.goalsHomeTeam === 0 && score.goalsAwayTeam === 0,
-    "Over 1.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 1,
-    "Under 1.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 1,
-    "Over 2.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 2,
-    "Under 2.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 2,
-    "Over 3.5": () => score.goalsHomeTeam + score.goalsAwayTeam > 3,
-    "Under 3.5": () => score.goalsHomeTeam + score.goalsAwayTeam <= 3,
+    "Home Win": () => goalsHomeTeam > goalsAwayTeam,
+    "Away Win": () => goalsAwayTeam > goalsHomeTeam,
+    "Draw": () => goalsHomeTeam === goalsAwayTeam,
+    "Double Chance Home": () => goalsHomeTeam >= goalsAwayTeam,
+    "Double Chance Away": () => goalsAwayTeam >= goalsHomeTeam,
+    "Two Teams Goals": () => goalsHomeTeam > 0 && goalsAwayTeam > 0,
+    "Two Teams Don't Goals": () => goalsHomeTeam === 0 || goalsAwayTeam === 0,
+    "Over 0.5": () => goalsHomeTeam > 0 || goalsAwayTeam > 0,
+    "Under 0.5": () => goalsHomeTeam === 0 && goalsAwayTeam === 0,
+    "Over 1.5": () => goalsHomeTeam + goalsAwayTeam > 1,
+    "Under 1.5": () => goalsHomeTeam + goalsAwayTeam <= 1,
+    "Over 2.5": () => goalsHomeTeam + goalsAwayTeam > 2,
+    "Under 2.5": () => goalsHomeTeam + goalsAwayTeam <= 2,
+    "Over 3.5": () => goalsHomeTeam + goalsAwayTeam > 3,
+    "Under 3.5": () => goalsHomeTeam + goalsAwayTeam <= 3,
   };
 
-  if (predictionMap.hasOwnProperty(prediction)) {
-    return predictionMap[prediction]();
-  }
-
-  return false;
+  return predictionMap.hasOwnProperty(prediction) ? predictionMap[prediction]() : false;
 }
+
 
 async function correctPreviousDayEvents() {
   try {
     const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
-    const previousDayEventsUrl = `http://localhost:5000/api/v1/predict/getByDate?date=${yesterday}`;
-    const response = await fetch(previousDayEventsUrl);
-    const { success, data: previousDayEvents } = await response.json();
+    const previousDayEventsUrl = await getByDatePredictService({ "query": { "date": yesterday } });
+    const { success, data: previousDayEvents } = previousDayEventsUrl;
 
     if (!success || !Array.isArray(previousDayEvents)) {
       throw new Error('Failed to retrieve previous day events');
@@ -244,56 +242,38 @@ async function correctPreviousDayEvents() {
     const pathFile = await findFileByDate('./api/data/api-football', yesterday);
     const data = fs.readFileSync(pathFile);
     const correctedMatchesResponse = JSON.parse(data);
-    const { country: [{ championship: [{ matches: correctedMatches }] }] } = correctedMatchesResponse;
+    const { country } = correctedMatchesResponse;
 
-    for (const event of previousDayEvents) {
-      const fixtureId = event.fixture.fixture_id;
-      const correctedMatch = correctedMatches.find(match => match.fixture_id === fixtureId);
+    for (const countryData of country) {
+      const { championship } = countryData;
 
-      if (correctedMatch) {
-        const updateUrl = `http://localhost:5000/api/v1/predict/update?fixture_id=${fixtureId}`;
-        await fetch(updateUrl, {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ fixtures: correctedMatch }),
-        });
-        console.log(`Event corrected for fixture ID ${fixtureId}`);
+      for (const leagueData of championship) {
+        const { matches: correctedMatches } = leagueData;
+
+        for (const event of previousDayEvents) {
+          const fixtureId = event.fixture.fixture_id;
+          const correctedMatch = correctedMatches.find(match => match.fixture_id === fixtureId);
+
+          if (correctedMatch) {
+            const isWin = isPredictionCorrect(event.fixture.score.fulltime, event.prediction);
+            await updatePredictService({
+              "query": { "fixture_id": fixtureId },
+              "body": {
+                fixture: correctedMatch,
+                iswin: isWin,
+              },
+            });
+            console.log(`Event corrected for fixture ID ${fixtureId}, isWin: ${isWin}`);
+          }
+        }
       }
     }
-
     console.log('Event correction completed successfully.');
   } catch (error) {
     console.error('Error while correcting events:', error.message);
   }
 }
 
-
-async function validateFixturesYesterday() {
-  try {
-    const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
-    const pathFile = await findFileByDate("./api/data/api-football",yesterday);
-    const data = fs.readFileSync(pathFile);
-    const rawdata = JSON.parse(data);
-    const filter =  await SearchFixturesAndUpdateByFixtureIds([983794],rawdata);
-    console.log("filter :",filter)
-    // const response = await fetch(`http://localhost:5000/api/v1/predict/getByDate?date=2020-12-18`, {
-    //   method: 'GET',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   }
-    // });
-    // if (response.ok) {
-    //   const data = await response.json();
-    //   const fixtureIds = c.map(obj => obj.fixture.fixture_id);
-    // }
-    
-  } catch (error) {
-    console.log(error)
-    const response = errorResponse(`Failed validate list fixture${error}`);
-  }
-}
 
 module.exports = {
   getDailyFixtures,
