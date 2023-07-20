@@ -36,6 +36,7 @@ async function getById(req, res) {
 async function update(req, res) {
   const { Id } = req.query;
   const formData = req.body;
+  console.log(formData)
   const response = await performCrudOperationWithResponse('update', { id:Id, updates:formData });
   res.status(response.statusCode).json(response);
 }

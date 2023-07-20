@@ -40,10 +40,26 @@ async function create(req, res) {
   }
 }
 
+async function getAll(req, res) {
+  try {
+    const response = await performCrudOperationWithResponse('getAll');
+    if (response.data && response.data.length > 0) {
+      // Retournez uniquement le premier document s'il existe
+      response.data = response.data[0];
+    }
+    console.log(response);
+    return res.status(response.statusCode).json(response);
+  } catch (error) {
+    console.error('Failed to get all headbands:', error);
+    const response = errorResponse('Failed to get all headbands');
+    res.status(response.statusCode).json(response);
+  }
+}
+
 async function getById(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getById', { id: Id });
-  console.log(response);
+  console.log(response); 
   return res.status(response.statusCode).json(response);
 }
 
@@ -57,7 +73,7 @@ async function update(req, res) {
     let imageUrl;
     if (file) {
       imageUrl = await uploadFile(file, 'headband');
-      console.log('Uploaded image URL:', imageUrl); 
+      console.log('Uploaded image URL:', imageUrl);
     }
 
     // Update the formData with the new S3 image URL if available
@@ -69,10 +85,11 @@ async function update(req, res) {
     const result = await Headband.findByIdAndUpdate(Id, formData, { new: true });
 
     const response = successResponse(result);
+    console.log(':::',response)
     res.status(response.statusCode).json(response);
   } catch (error) {
     console.error('Failed to update headband:', error);
-    const response = errorResponse('Failed to update headband'); 
+    const response = errorResponse('Failed to update headband');
     res.status(response.statusCode).json(response);
   }
 }
@@ -87,6 +104,7 @@ async function deleted(req, res) {
 module.exports = {
   create,
   getById,
+  getAll,
   update,
   deleted,
 };

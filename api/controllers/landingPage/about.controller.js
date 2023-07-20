@@ -1,5 +1,11 @@
 var ServiceAbout = require('../../services/landingPage/about.service');
 
+const getAll = async (req, res) => {
+     // Get an about
+     await ServiceAbout.getAll(req, res);
+   
+   };
+
 const getById = async (req, res) => {
   // Get an about
   await ServiceAbout.getById(req, res);
@@ -21,4 +27,4 @@ const deleted = async (req, res) => {
      await ServiceAbout.deleted(req, res);
 };
 
-module.exports = { getById, create, update, deleted };
+module.exports = { getAll, getById, create, update, deleted };

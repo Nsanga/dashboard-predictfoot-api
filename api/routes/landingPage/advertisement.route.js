@@ -13,10 +13,11 @@ const advertisementRoutes = app => {
 
 
 //Get a list of all predict
+router.get('/getAll', advertisementController.getAll);
 router.get('/getById', advertisementController.getById);
 router.post('/create', uploads.single('image'), advertisementController.create);
 router.put('/update', uploads.single('image'), advertisementController.update);
-router.delete('/delete', advertisementController.deleted);
+router.delete('/delete', advertisementController.deleted); 
 
 
 }

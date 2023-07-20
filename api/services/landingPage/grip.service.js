@@ -19,13 +19,13 @@ async function create(req, res) {
   try {
     const formData = req.body;
     const file = req.file;
-
+     console.log("file",file)
     // Upload the file to Amazon S3
     const imageUrl = await uploadFile(file, 'grip'); 
     console.log('Uploaded image URL:', imageUrl);
 
     // Update the formData with the S3 image URL
-    formData.image = imageUrl;
+    formData.image = imageUrl; 
 
     // Create the Grip document
     const grip = new Grip(formData);

@@ -13,6 +13,7 @@ const aboutRoutes = app => {
 
 
 //Get a list of all predict
+router.get('/getAll', aboutController.getAll);
 router.get('/getById', aboutController.getById);
 router.post('/create', uploads.single('image'), aboutController.create);
 router.put('/update', uploads.single('image'), aboutController.update);
