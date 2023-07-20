@@ -22,7 +22,7 @@ async function createPredictService(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function getPredictsServiceByDate(req, res) {
+async function getPredictsService(req, res) {
   const { dateFrom, dateTo, type, search  } = req.query;
   const page = parseInt(req.query.page) || 1;
   const limit = parseInt(req.query.limit) || 10;
@@ -40,7 +40,7 @@ async function getPredictsServiceByDate(req, res) {
       data.date = { $regex: new RegExp(`^${dateFrom}`) };
     } else if (dateFrom && dateTo) {
       // Filtrer les données pour la plage de dates spécifiée
-      data.date = { $gte: dateFrom, $lte: dateTo };
+      data.date = { $gte: dateFrom, $lte: dateTo }; 
     }
 
     if (type) {
@@ -107,7 +107,7 @@ async function deletePredictService(req, res) {
 module.exports = {
   createPredictService,
   getPredictService,
-  getPredictsServiceByDate,
+  getPredictsService,
   updatePredictService,
   deletePredictService,
 };

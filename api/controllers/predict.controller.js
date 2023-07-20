@@ -2,7 +2,7 @@ var ServicePredict = require('../services/predict.service');
 
 const get = async (req, res) => {
      // Obtenir tous les prédictions
-     await ServicePredict.getPredictsServiceByDate(req, res);
+     await ServicePredict.getPredictsService(req, res);
 
 };
 
