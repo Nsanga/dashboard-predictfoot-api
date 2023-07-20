@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { jsonFileWriter } = require('./jsonFileWriter');
 const { errorResponse, successResponse }  = require ('./apiResponse.service');
-const {getPredictsServiceByDate,updatePredictService} = require ('./predict.service')
+const {getPredictsService,updatePredictService} = require ('./predict.service')
 const getRequestConfig = (param) => {
     const config = {
       method: "GET",
@@ -232,7 +232,7 @@ function isPredictionCorrect(score, prediction) {
 async function correctPreviousDayEvents() {
   try {
     const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
-    const previousDayEventsUrl = await getPredictsServiceByDate({ "query": { "dateFrom": yesterday } });
+    const previousDayEventsUrl = await getPredictsService({ "query": { "dateFrom": yesterday } });
     const { success, data: previousDayEvents } = previousDayEventsUrl;
     if (!success || !Array.isArray(previousDayEvents.results)) {
       throw new Error('Failed to retrieve previous day events');
