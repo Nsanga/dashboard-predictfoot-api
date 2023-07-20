@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { jsonFileWriter } = require('./jsonFileWriter');
 const { errorResponse, successResponse }  = require ('./apiResponse.service');
-const {getByDatePredictService,updatePredictService} = require ('./predict.service')
+const {getPredictsServiceByDate,updatePredictService} = require ('./predict.service')
 const getRequestConfig = (param) => {
     const config = {
       method: "GET",
@@ -232,10 +232,9 @@ function isPredictionCorrect(score, prediction) {
 async function correctPreviousDayEvents() {
   try {
     const yesterday = moment().subtract(1, 'day').format('YYYY-MM-DD');
-    const previousDayEventsUrl = await getByDatePredictService({ "query": { "date": yesterday } });
+    const previousDayEventsUrl = await getPredictsServiceByDate({ "query": { "dateFrom": yesterday } });
     const { success, data: previousDayEvents } = previousDayEventsUrl;
-
-    if (!success || !Array.isArray(previousDayEvents)) {
+    if (!success || !Array.isArray(previousDayEvents.results)) {
       throw new Error('Failed to retrieve previous day events');
     }
 
@@ -250,7 +249,7 @@ async function correctPreviousDayEvents() {
       for (const leagueData of championship) {
         const { matches: correctedMatches } = leagueData;
 
-        for (const event of previousDayEvents) {
+        for (const event of previousDayEvents.results) {
           const fixtureId = event.fixture.fixture_id;
           const correctedMatch = correctedMatches.find(match => match.fixture_id === fixtureId);
 
