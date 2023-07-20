@@ -11,11 +11,10 @@ const planRoutes = app => {
 
 //Get a list of all predict
 router.get('/getAll', planController.getAll);
-router.get('/getOne', planController.getOne);
+router.get('/getById', planController.getById);
 router.post('/create', planController.create);
 router.put('/update', planController.update);
 router.delete('/delete', planController.deleted);
-
 
 }
 

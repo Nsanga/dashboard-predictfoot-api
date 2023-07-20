@@ -1,11 +1,9 @@
 var ServicePredict = require('../services/predict.service');
 
-
-const getByDate = async (req, res) => {
-     // Obtenir tous les prédictions par rapport a une date 
-     const  response = await ServicePredict.getByDatePredictService(req);
-     res.status(response.statusCode).json(response)
-
+const get = async (req, res) => {
+     // Obtenir tous les prédictions
+   const response =  await ServicePredict.getPredictsServiceByDate(req);
+   res.status(response.statusCode).json(response)
 };
 
 const create = async (req, res) => {
@@ -24,4 +22,4 @@ const deleted = async (req, res) => {
      await ServicePredict.deletePredictService(req, res);
 };
 
-module.exports = { getByDate, create, update, deleted };
+module.exports = { get, create, update, deleted };

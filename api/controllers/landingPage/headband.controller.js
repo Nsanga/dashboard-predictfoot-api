@@ -1,8 +1,8 @@
 var ServiceHeadband = require('../../services/landingPage/headband.service');
 
-const getOne = async (req, res) => {
+const getById = async (req, res) => {
   // Get a headband
-  await ServiceHeadband.getOne(req, res);
+  await ServiceHeadband.getById(req, res);
 
 };
 
@@ -21,4 +21,4 @@ const deleted = async (req, res) => {
      await ServiceHeadband.deleted(req, res);
 };
 
-module.exports = { getOne, create, update, deleted };
+module.exports = { getById, create, update, deleted };

@@ -9,7 +9,7 @@ const clientSchema = mongoose.Schema({
         type: String,
         required: 'Please fill From Name'
     },
-    profile: {
+    image: {
         type: String,
         default: null 
     },

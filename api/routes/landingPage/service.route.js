@@ -11,7 +11,7 @@ const serviceRoutes = app => {
 
 //Get a list of all predict
 router.get('/getAll', serviceController.getAll);
-router.get('/getOne', serviceController.getOne);
+router.get('/getById', serviceController.getById);
 router.post('/create', serviceController.create);
 router.put('/update', serviceController.update);
 router.delete('/delete', serviceController.deleted);

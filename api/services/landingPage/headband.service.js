@@ -40,9 +40,9 @@ async function create(req, res) {
   }
 }
 
-async function getOne(req, res) {
+async function getById(req, res) {
   const { Id } = req.query;
-  const response = await performCrudOperationWithResponse('getOne', { id: Id });
+  const response = await performCrudOperationWithResponse('getById', { id: Id });
   console.log(response);
   return res.status(response.statusCode).json(response);
 }
@@ -57,7 +57,7 @@ async function update(req, res) {
     let imageUrl;
     if (file) {
       imageUrl = await uploadFile(file, 'headband');
-      console.log('Uploaded image URL:', imageUrl);
+      console.log('Uploaded image URL:', imageUrl); 
     }
 
     // Update the formData with the new S3 image URL if available
@@ -72,7 +72,7 @@ async function update(req, res) {
     res.status(response.statusCode).json(response);
   } catch (error) {
     console.error('Failed to update headband:', error);
-    const response = errorResponse('Failed to update headband');
+    const response = errorResponse('Failed to update headband'); 
     res.status(response.statusCode).json(response);
   }
 }
@@ -86,7 +86,7 @@ async function deleted(req, res) {
 
 module.exports = {
   create,
-  getOne,
+  getById,
   update,
   deleted,
 };

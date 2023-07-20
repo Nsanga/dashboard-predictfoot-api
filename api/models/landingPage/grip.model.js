@@ -1,16 +1,8 @@
 const mongoose = require('mongoose')
 
 const gripSchema = mongoose.Schema({
-    titleGetstarted: {
-        type: String,
-        required: 'Please fill From TitleGetstarted'
-    },
-    subtitle: {
-        type: String,
-        required: 'Please fill From Subtitle'
-    },
     number: {
-        type: Number,
+        type: String,
         required: 'Please fill From Number'
     },
     title: {

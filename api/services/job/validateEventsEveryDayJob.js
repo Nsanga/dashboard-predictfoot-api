@@ -1,7 +1,7 @@
 const axios = require("axios");
 const cron = require('node-cron');
 const config = require('../config/database');
-const ObjectId = require('mongodb').ObjectID;
+const ObjectId = require('mongodb').ObjectId;
 const MongoClient = require('mongodb').MongoClient;
 var moment = require('moment');
 

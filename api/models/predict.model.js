@@ -1,116 +1,144 @@
+const { Double } = require('mongodb')
 const mongoose = require('mongoose')
 
 const predictSchema = mongoose.Schema({
-    date: {
-        type: String,
-    required: 'Please fill From Date'
-    },
     country: {
-        name: {
-            type: String,
-            required: 'Please fill From Country'
-        },
         flag: {
             type: String,
-            default: "https://media.api-sports.io/football/leagues/10.png"    
-            }
-    },
-  
-    championship: {
+            default: "https://media.api-sports.io/football/leagues/10.png"
+        },
         name: {
             type: String,
-        },
+        }
+    },
+    championship: {
         logo: {
             type: String,
-            default: "https://media.api-sports.io/football/leagues/10.png"    
-            }
+            default: "https://media.api-sports.io/football/leagues/10.png"
+        },
+        name: {
+            type: String,
+        }
     },
-    fixture:  {
+    fixture: {
         fixture_id: {
             type: Number,
-            },
-            homeTeam: {
-                team_id: {
-                    type     : Number,
-                },
-                team_name: {
-                    type     : String,
-                },
-                logo: {
-                    type: String,
-                    default: "https://media.api-sports.io/football/leagues/10.png"    
-                    }    
-                       },
-            awayTeam: {
-                team_id: {
-                    type     : Number,
-                },
-                team_name: {
-                    type     : String,
-                },
-                logo: {
-                    type: String,
-                    default: "https://media.api-sports.io/football/leagues/10.png"    
-                    }
-            },
-            event_date: {
-                type: String,
-            },
-            goalsHomeTeam: {
-                type: Number,
-            },
-            goalsAwayTeam: {
-                type: Number,
-            },
-            score: {
-                halftime: {
-                    type     : String,
-                },
-                fulltime: {
-                    type     : String,
-                },
-                extratime: {
-                    type: String,
-                    },
-                    penalty: {
-                        type: String,
-                        }
-            },
-            venue: {
-                type: String,
-            },
-            referee: {
-                type: String,
-            },
-            day_saison: {
-                type: String,
-            },
-            statuts: {
-                type: String,
-            },
         },
-        prediction: {
-            type: String,
-            required: 'Please fill From Prediction'
-        },
-        coast: {
+        league_id: {
             type: Number,
-            required: 'Please fill From Prediction'
         },
-        type_prediction: {
-            type: String,
-            required: 'Please fill From Type Prediction'
+        league: {
+            name: {
+                type: String,
+            },
+            country: {
+                type: String,
+            },
+            logo: {
+                type: String,
+            },
+            flag: {
+                type: String,
+            }
         },
-        author: {
-            type: String,
-            required: 'Please fill From Author'
-        },  
-         iswin: {
-             default:"null",
+        event_date: {
             type: String,
         },
-        timestamp : { type : Date, default: Date.now }
-
+        event_timestamp: {
+            type: Number,
+        },
+        firstHalfStart: {
+            type: Number,
+        },
+        secondHalfStart: {
+            type: Number,
+        },
+        round: {
+            type: String,
+        },
+        status: {
+            type: String,
+        },
+        statusShort: {
+            type: String,
+        },
+        elapsed: {
+            type: Number,
+        },
+        venue: {
+            type: String,
+        },
+        referee: {
+            type: String,
+        },
+        homeTeam: {
+            team_id: {
+                type: Number
+            },
+            team_name: {
+                type: String,
+            },
+            logo: {
+                type: String,
+            }
+        },
+        awayTeam: {
+            team_id: {
+                type: Number
+            },
+            team_name: {
+                type: String,
+            },
+            logo: {
+                type: String,
+            }
+        },
+        goalsHomeTeam: {
+            type: Number
+        },
+        goalsAwayTeam: {
+            type: Number
+        },
+        score: {
+            halftime: {
+                type: String,
+            },
+            fulltime: {
+                type: String,
+            },
+            extratime: {
+                type: String,
+                default: null
+            },
+            penalty: {
+                type: String,
+                default: null
+            }
+        }
+    },
+    iswin: {
+        type: String,
+    },
+    date: {
+        type: String,
+    },
+    prediction: {
+        type: String,
+    },
+    coast: {
+        type: Number,
+        min: 0,
+        max: 999999.99
+    },
+    type_prediction: {
+        type: String,
+    },
+    author: {
+        type: String,
+    },
+    timestamp: {
+        date: { type: String }
+    }
 })
 
 

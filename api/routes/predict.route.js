@@ -9,8 +9,8 @@ const predictRoutes = app => {
 
 
 
-//route prediction
-router.get('/getByDate', predictController.getByDate);
+//Get a list of all predict
+router.get('/get', predictController.get);
 router.post('/create', predictController.create);
 router.put('/update', predictController.update);
 router.delete('/delete', predictController.deleted);

@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const multer = require('multer')
-const upload = multer({ dest: 'uploads/' })
+const multer = require('multer');
+const storage = multer.memoryStorage();
+const uploads = multer({ storage: storage });
 
 // Require controller modules.
 var advertisementController = require('../../controllers/landingPage/advertisement.controller');
@@ -12,10 +13,9 @@ const advertisementRoutes = app => {
 
 
 //Get a list of all predict
-router.get('/getAll', advertisementController.getAll);
-router.get('/getOne', advertisementController.getOne);
-router.post('/create', upload.single('image'), advertisementController.create);
-router.put('/update', upload.single('image'), advertisementController.update);
+router.get('/getById', advertisementController.getById);
+router.post('/create', uploads.single('image'), advertisementController.create);
+router.put('/update', uploads.single('image'), advertisementController.update);
 router.delete('/delete', advertisementController.deleted);
 
 
