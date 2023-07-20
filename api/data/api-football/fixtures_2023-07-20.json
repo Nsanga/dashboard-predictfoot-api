@@ -1,0 +1,2719 @@
+{
+  "results": 100,
+  "country": [
+    {
+      "name": "Bolivia",
+      "flag": "https://media-2.api-sports.io/flags/bo.svg",
+      "championship": [
+        {
+          "name": "Copa de la División Profesional",
+          "logo": "https://media-2.api-sports.io/football/leagues/964.png",
+          "leagueid": 5085,
+          "matches": [
+            {
+              "fixture_id": 1008314,
+              "homeTeam": {
+                "team_id": 3706,
+                "team_name": "Nacional Potosí",
+                "logo": "https://media-3.api-sports.io/football/teams/3706.png"
+              },
+              "awayTeam": {
+                "team_id": 3701,
+                "team_name": "Blooming",
+                "logo": "https://media-1.api-sports.io/football/teams/3701.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "Estadio Víctor Agustín Ugarte",
+              "day saison": "Group Stage - 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "0-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1008313,
+              "homeTeam": {
+                "team_id": 12259,
+                "team_name": "Santa Cruz",
+                "logo": "https://media-2.api-sports.io/football/teams/12259.png"
+              },
+              "awayTeam": {
+                "team_id": 3711,
+                "team_name": "The Strongest",
+                "logo": "https://media-3.api-sports.io/football/teams/3711.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Estadio Gilberto Parada",
+              "day saison": "Group Stage - 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1008309,
+              "homeTeam": {
+                "team_id": 3707,
+                "team_name": "Oriente Petrolero",
+                "logo": "https://media-1.api-sports.io/football/teams/3707.png"
+              },
+              "awayTeam": {
+                "team_id": 3709,
+                "team_name": "Royal Pari",
+                "logo": "https://media-2.api-sports.io/football/teams/3709.png"
+              },
+              "event_date": "2023-07-20T22:00:00.000Z",
+              "venue": "Estadio Ramón Aguilera Costas",
+              "day saison": "Group Stage - 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ecuador",
+      "flag": "https://media-1.api-sports.io/flags/ec.svg",
+      "championship": [
+        {
+          "name": "Liga Pro Serie B",
+          "logo": "https://media-3.api-sports.io/football/leagues/243.png",
+          "leagueid": 5100,
+          "matches": [
+            {
+              "fixture_id": 1011880,
+              "homeTeam": {
+                "team_id": 1155,
+                "team_name": "Macara",
+                "logo": "https://media-2.api-sports.io/football/teams/1155.png"
+              },
+              "awayTeam": {
+                "team_id": 16477,
+                "team_name": "Guayaquil",
+                "logo": "https://media-1.api-sports.io/football/teams/16477.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "Estadio Bellavista de Ambato",
+              "day saison": "Regular Season - 21",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Argentina",
+      "flag": "https://media-1.api-sports.io/flags/ar.svg",
+      "championship": [
+        {
+          "name": "Copa Argentina",
+          "logo": "https://media-1.api-sports.io/football/leagues/130.png",
+          "leagueid": 4930,
+          "matches": [
+            {
+              "fixture_id": 1036646,
+              "homeTeam": {
+                "team_id": 436,
+                "team_name": "Racing Club",
+                "logo": "https://media-1.api-sports.io/football/teams/436.png"
+              },
+              "awayTeam": {
+                "team_id": 485,
+                "team_name": "San Martin Tucuman",
+                "logo": "https://media-2.api-sports.io/football/teams/485.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "Estadio Mario Alberto Kempes",
+              "day saison": "Round of 32",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "2-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036655,
+              "homeTeam": {
+                "team_id": 461,
+                "team_name": "San Martin S.J.",
+                "logo": "https://media-2.api-sports.io/football/teams/461.png"
+              },
+              "awayTeam": {
+                "team_id": 438,
+                "team_name": "Velez Sarsfield",
+                "logo": "https://media-3.api-sports.io/football/teams/438.png"
+              },
+              "event_date": "2023-07-20T16:45:00.000Z",
+              "venue": "Estadio Julio César Villagra",
+              "day saison": "Round of 32",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1043109,
+              "homeTeam": {
+                "team_id": 1938,
+                "team_name": "Villa Mitre",
+                "logo": "https://media-3.api-sports.io/football/teams/1938.png"
+              },
+              "awayTeam": {
+                "team_id": 439,
+                "team_name": "Godoy Cruz",
+                "logo": "https://media-1.api-sports.io/football/teams/439.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Estadio Alfredo Martín Beranger",
+              "day saison": "Round of 32",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036645,
+              "homeTeam": {
+                "team_id": 2432,
+                "team_name": "Barracas Central",
+                "logo": "https://media-2.api-sports.io/football/teams/2432.png"
+              },
+              "awayTeam": {
+                "team_id": 451,
+                "team_name": "Boca Juniors",
+                "logo": "https://media-3.api-sports.io/football/teams/451.png"
+              },
+              "event_date": "2023-07-20T22:00:00.000Z",
+              "venue": "Estadio Único Madre de Ciudades",
+              "day saison": "Round of 32",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Reserve League",
+          "logo": "https://media-2.api-sports.io/football/leagues/906.png",
+          "leagueid": 4996,
+          "matches": [
+            {
+              "fixture_id": 997090,
+              "homeTeam": {
+                "team_id": 18687,
+                "team_name": "Godoy Cruz Res.",
+                "logo": "https://media-3.api-sports.io/football/teams/18687.png"
+              },
+              "awayTeam": {
+                "team_id": 18679,
+                "team_name": "Banfield Res.",
+                "logo": "https://media-2.api-sports.io/football/teams/18679.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": null,
+              "day saison": "1st Phase - 26",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 997092,
+              "homeTeam": {
+                "team_id": 18701,
+                "team_name": "Unión Santa Fe Res.",
+                "logo": "https://media-1.api-sports.io/football/teams/18701.png"
+              },
+              "awayTeam": {
+                "team_id": 18702,
+                "team_name": "Vélez Sársfield Res.",
+                "logo": "https://media-1.api-sports.io/football/teams/18702.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": null,
+              "day saison": "1st Phase - 26",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 997094,
+              "homeTeam": {
+                "team_id": 18686,
+                "team_name": "Gimnasia La Plata Res.",
+                "logo": "https://media-3.api-sports.io/football/teams/18686.png"
+              },
+              "awayTeam": {
+                "team_id": 18699,
+                "team_name": "Talleres Córdoba Res.",
+                "logo": "https://media-1.api-sports.io/football/teams/18699.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": null,
+              "day saison": "1st Phase - 26",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 997095,
+              "homeTeam": {
+                "team_id": 18691,
+                "team_name": "Newell's Old Boys Res.",
+                "logo": "https://media-3.api-sports.io/football/teams/18691.png"
+              },
+              "awayTeam": {
+                "team_id": 18681,
+                "team_name": "Boca Juniors Res.",
+                "logo": "https://media-2.api-sports.io/football/teams/18681.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": null,
+              "day saison": "1st Phase - 26",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 997096,
+              "homeTeam": {
+                "team_id": 18689,
+                "team_name": "Independiente Res.",
+                "logo": "https://media-1.api-sports.io/football/teams/18689.png"
+              },
+              "awayTeam": {
+                "team_id": 18678,
+                "team_name": "Atlético Tucumán Res.",
+                "logo": "https://media-1.api-sports.io/football/teams/18678.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": null,
+              "day saison": "1st Phase - 26",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "World",
+      "flag": null,
+      "championship": [
+        {
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media-1.api-sports.io/football/leagues/11.png",
+          "leagueid": 4949,
+          "matches": [
+            {
+              "fixture_id": 1046424,
+              "homeTeam": {
+                "team_id": 1148,
+                "team_name": "Emelec",
+                "logo": "https://media-1.api-sports.io/football/teams/1148.png"
+              },
+              "awayTeam": {
+                "team_id": 2546,
+                "team_name": "Sporting Cristal",
+                "logo": "https://media-1.api-sports.io/football/teams/2546.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "Estadio George Capwell",
+              "day saison": "Round of 32",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1046426,
+              "homeTeam": {
+                "team_id": 460,
+                "team_name": "San Lorenzo",
+                "logo": "https://media-3.api-sports.io/football/teams/460.png"
+              },
+              "awayTeam": {
+                "team_id": 1128,
+                "team_name": "Independiente Medellin",
+                "logo": "https://media-3.api-sports.io/football/teams/1128.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "Estadio Pedro Bidegaín",
+              "day saison": "Round of 32",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1046428,
+              "homeTeam": {
+                "team_id": 2329,
+                "team_name": "A. Italiano",
+                "logo": "https://media-2.api-sports.io/football/teams/2329.png"
+              },
+              "awayTeam": {
+                "team_id": 2337,
+                "team_name": "Nublense",
+                "logo": "https://media-2.api-sports.io/football/teams/2337.png"
+              },
+              "event_date": "2023-07-20T22:00:00.000Z",
+              "venue": "Estadio Municipal Alcaldesa Ester Roa Rebolledo",
+              "day saison": "Round of 32",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Friendlies Clubs",
+          "logo": "https://media-3.api-sports.io/football/leagues/667.png",
+          "leagueid": 4991,
+          "matches": [
+            {
+              "fixture_id": 1064456,
+              "homeTeam": {
+                "team_id": 49,
+                "team_name": "Chelsea",
+                "logo": "https://media-3.api-sports.io/football/teams/49.png"
+              },
+              "awayTeam": {
+                "team_id": 1837,
+                "team_name": "Wrexham",
+                "logo": "https://media-1.api-sports.io/football/teams/1837.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 5,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "5-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072486,
+              "homeTeam": {
+                "team_id": 3494,
+                "team_name": "Stomil Olsztyn",
+                "logo": "https://media-1.api-sports.io/football/teams/3494.png"
+              },
+              "awayTeam": {
+                "team_id": 6489,
+                "team_name": "Hirnyk",
+                "logo": "https://media-2.api-sports.io/football/teams/6489.png"
+              },
+              "event_date": "2023-07-20T00:00:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Time to be defined",
+              "statusShort": "TBD",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1014225,
+              "homeTeam": {
+                "team_id": 4003,
+                "team_name": "New Mexico United",
+                "logo": "https://media-1.api-sports.io/football/teams/4003.png"
+              },
+              "awayTeam": {
+                "team_id": 746,
+                "team_name": "Sunderland",
+                "logo": "https://media-3.api-sports.io/football/teams/746.png"
+              },
+              "event_date": "2023-07-20T01:00:00.000Z",
+              "venue": "Isotopes Park",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "2-3",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1042682,
+              "homeTeam": {
+                "team_id": 2283,
+                "team_name": "Atlas",
+                "logo": "https://media-3.api-sports.io/football/teams/2283.png"
+              },
+              "awayTeam": {
+                "team_id": 731,
+                "team_name": "Sporting Gijon",
+                "logo": "https://media-2.api-sports.io/football/teams/731.png"
+              },
+              "event_date": "2023-07-20T02:00:00.000Z",
+              "venue": "Estadio Jalisco",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "PEN",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "1-1",
+                "extratime": "0-0",
+                "penalty": "2-4"
+              }
+            },
+            {
+              "fixture_id": 1039062,
+              "homeTeam": {
+                "team_id": 2288,
+                "team_name": "Necaxa",
+                "logo": "https://media-3.api-sports.io/football/teams/2288.png"
+              },
+              "awayTeam": {
+                "team_id": 531,
+                "team_name": "Athletic Club",
+                "logo": "https://media-1.api-sports.io/football/teams/531.png"
+              },
+              "event_date": "2023-07-20T03:00:00.000Z",
+              "venue": "Estadio Victoria de Aguascalientes",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072485,
+              "homeTeam": {
+                "team_id": 487,
+                "team_name": "Lazio",
+                "logo": "https://media-1.api-sports.io/football/teams/487.png"
+              },
+              "awayTeam": {
+                "team_id": 14007,
+                "team_name": "Primorje",
+                "logo": "https://media-2.api-sports.io/football/teams/14007.png"
+              },
+              "event_date": "2023-07-20T12:00:00.000Z",
+              "venue": "Stadio Rodolfo Zandegiacomo",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1061189,
+              "homeTeam": {
+                "team_id": 1005,
+                "team_name": "Antalyaspor",
+                "logo": "https://media-2.api-sports.io/football/teams/1005.png"
+              },
+              "awayTeam": {
+                "team_id": 996,
+                "team_name": "Alanyaspor",
+                "logo": "https://media-3.api-sports.io/football/teams/996.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 2",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1047231,
+              "homeTeam": {
+                "team_id": 4265,
+                "team_name": "Verl",
+                "logo": "https://media-3.api-sports.io/football/teams/4265.png"
+              },
+              "awayTeam": {
+                "team_id": 4259,
+                "team_name": "Alemannia Aachen",
+                "logo": "https://media-2.api-sports.io/football/teams/4259.png"
+              },
+              "event_date": "2023-07-20T14:30:00.000Z",
+              "venue": "Zum Furlbach Kunstrasen",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072455,
+              "homeTeam": {
+                "team_id": 489,
+                "team_name": "AC Milan",
+                "logo": "https://media-1.api-sports.io/football/teams/489.png"
+              },
+              "awayTeam": {
+                "team_id": 1689,
+                "team_name": "Lumezzane",
+                "logo": "https://media-1.api-sports.io/football/teams/1689.png"
+              },
+              "event_date": "2023-07-20T15:00:00.000Z",
+              "venue": "Centro Sportivo Milanello",
+              "day saison": "Club Friendlies 1",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036837,
+              "homeTeam": {
+                "team_id": 2414,
+                "team_name": "Zalaegerszegi TE",
+                "logo": "https://media-2.api-sports.io/football/teams/2414.png"
+              },
+              "awayTeam": {
+                "team_id": 2934,
+                "team_name": "Al-Ettifaq",
+                "logo": "https://media-2.api-sports.io/football/teams/2934.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "ZTE-Aréna",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1042525,
+              "homeTeam": {
+                "team_id": 9367,
+                "team_name": "Borussia Dortmund II",
+                "logo": "https://media-3.api-sports.io/football/teams/9367.png"
+              },
+              "awayTeam": {
+                "team_id": 259,
+                "team_name": "Lommel United",
+                "logo": "https://media-2.api-sports.io/football/teams/259.png"
+              },
+              "event_date": "2023-07-20T16:00:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072487,
+              "homeTeam": {
+                "team_id": 492,
+                "team_name": "Napoli",
+                "logo": "https://media-1.api-sports.io/football/teams/492.png"
+              },
+              "awayTeam": {
+                "team_id": 19648,
+                "team_name": "Anaune",
+                "logo": "https://media-3.api-sports.io/football/teams/19648.png"
+              },
+              "event_date": "2023-07-20T16:00:00.000Z",
+              "venue": "Stadio Comunale",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072606,
+              "homeTeam": {
+                "team_id": 574,
+                "team_name": "Vardar Skopje",
+                "logo": "https://media-1.api-sports.io/football/teams/574.png"
+              },
+              "awayTeam": {
+                "team_id": 3744,
+                "team_name": "Bokelj",
+                "logo": "https://media-1.api-sports.io/football/teams/3744.png"
+              },
+              "event_date": "2023-07-20T16:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 4",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1031748,
+              "homeTeam": {
+                "team_id": 210,
+                "team_name": "Heerenveen",
+                "logo": "https://media-3.api-sports.io/football/teams/210.png"
+              },
+              "awayTeam": {
+                "team_id": 1124,
+                "team_name": "OFI",
+                "logo": "https://media-3.api-sports.io/football/teams/1124.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Sportpark 't Heidefjild",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1051828,
+              "homeTeam": {
+                "team_id": 502,
+                "team_name": "Fiorentina",
+                "logo": "https://media-3.api-sports.io/football/teams/502.png"
+              },
+              "awayTeam": {
+                "team_id": 523,
+                "team_name": "Parma",
+                "logo": "https://media-3.api-sports.io/football/teams/523.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Viola Park",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1054072,
+              "homeTeam": {
+                "team_id": 2247,
+                "team_name": "Apoel Nicosia",
+                "logo": "https://media-3.api-sports.io/football/teams/2247.png"
+              },
+              "awayTeam": {
+                "team_id": 2110,
+                "team_name": "Volos NFC",
+                "logo": "https://media-2.api-sports.io/football/teams/2110.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Neo GSP",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1073473,
+              "homeTeam": {
+                "team_id": 2040,
+                "team_name": "US Hostert",
+                "logo": "https://media-3.api-sports.io/football/teams/2040.png"
+              },
+              "awayTeam": {
+                "team_id": 15905,
+                "team_name": "Schifflange",
+                "logo": "https://media-3.api-sports.io/football/teams/15905.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 4",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036470,
+              "homeTeam": {
+                "team_id": 11109,
+                "team_name": "Annagh United",
+                "logo": "https://media-3.api-sports.io/football/teams/11109.png"
+              },
+              "awayTeam": {
+                "team_id": 5346,
+                "team_name": "Newry City AFC",
+                "logo": "https://media-1.api-sports.io/football/teams/5346.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "BMG Arena",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072607,
+              "homeTeam": {
+                "team_id": 8860,
+                "team_name": "Lordswood",
+                "logo": "https://media-3.api-sports.io/football/teams/8860.png"
+              },
+              "awayTeam": {
+                "team_id": 7764,
+                "team_name": "Bowers & Pitsea",
+                "logo": "https://media-1.api-sports.io/football/teams/7764.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072609,
+              "homeTeam": {
+                "team_id": 211,
+                "team_name": "Benfica",
+                "logo": "https://media-2.api-sports.io/football/teams/211.png"
+              },
+              "awayTeam": {
+                "team_id": 2939,
+                "team_name": "Al-Nassr",
+                "logo": "https://media-3.api-sports.io/football/teams/2939.png"
+              },
+              "event_date": "2023-07-20T19:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072488,
+              "homeTeam": {
+                "team_id": 6950,
+                "team_name": "Rekord Bielsko-Biała",
+                "logo": "https://media-1.api-sports.io/football/teams/6950.png"
+              },
+              "awayTeam": {
+                "team_id": 1121,
+                "team_name": "Vorskla Poltava",
+                "logo": "https://media-1.api-sports.io/football/teams/1121.png"
+              },
+              "event_date": "2023-07-20T22:00:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "World Cup - Women",
+          "logo": "https://media-2.api-sports.io/football/leagues/8.png",
+          "leagueid": 5111,
+          "matches": [
+            {
+              "fixture_id": 1013552,
+              "homeTeam": {
+                "team_id": 1716,
+                "team_name": "New Zealand W",
+                "logo": "https://media-1.api-sports.io/football/teams/1716.png"
+              },
+              "awayTeam": {
+                "team_id": 1724,
+                "team_name": "Norway W",
+                "logo": "https://media-2.api-sports.io/football/teams/1724.png"
+              },
+              "event_date": "2023-07-20T07:00:00.000Z",
+              "venue": "Eden Park",
+              "day saison": "Group Stage - 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013553,
+              "homeTeam": {
+                "team_id": 1722,
+                "team_name": "Australia W",
+                "logo": "https://media-3.api-sports.io/football/teams/1722.png"
+              },
+              "awayTeam": {
+                "team_id": 14456,
+                "team_name": "Republic of Ireland",
+                "logo": "https://media-1.api-sports.io/football/teams/14456.png"
+              },
+              "event_date": "2023-07-20T10:00:00.000Z",
+              "venue": "Stadium Australia",
+              "day saison": "Group Stage - 1",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media-3.api-sports.io/football/leagues/848.png",
+          "leagueid": 5277,
+          "matches": [
+            {
+              "fixture_id": 1036936,
+              "homeTeam": {
+                "team_id": 591,
+                "team_name": "FC Santa Coloma",
+                "logo": "https://media-3.api-sports.io/football/teams/591.png"
+              },
+              "awayTeam": {
+                "team_id": 2191,
+                "team_name": "Penybont",
+                "logo": "https://media-3.api-sports.io/football/teams/2191.png"
+              },
+              "event_date": "2023-07-20T15:00:00.000Z",
+              "venue": "Estadi Comunal d'Andorra la Vella",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036962,
+              "homeTeam": {
+                "team_id": 2277,
+                "team_name": "Birkirkara",
+                "logo": "https://media-2.api-sports.io/football/teams/2277.png"
+              },
+              "awayTeam": {
+                "team_id": 552,
+                "team_name": "Maribor",
+                "logo": "https://media-2.api-sports.io/football/teams/552.png"
+              },
+              "event_date": "2023-07-20T15:00:00.000Z",
+              "venue": "MFA Centenary Stadium",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036996,
+              "homeTeam": {
+                "team_id": 10125,
+                "team_name": "Europa",
+                "logo": "https://media-3.api-sports.io/football/teams/10125.png"
+              },
+              "awayTeam": {
+                "team_id": 14393,
+                "team_name": "Dukagjini",
+                "logo": "https://media-2.api-sports.io/football/teams/14393.png"
+              },
+              "event_date": "2023-07-20T15:00:00.000Z",
+              "venue": "Victoria Stadium",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036942,
+              "homeTeam": {
+                "team_id": 3528,
+                "team_name": "Paide",
+                "logo": "https://media-3.api-sports.io/football/teams/3528.png"
+              },
+              "awayTeam": {
+                "team_id": 678,
+                "team_name": "B36 Torshavn",
+                "logo": "https://media-2.api-sports.io/football/teams/678.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "Kadrioru staadion",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036986,
+              "homeTeam": {
+                "team_id": 2274,
+                "team_name": "Trans Narva",
+                "logo": "https://media-3.api-sports.io/football/teams/2274.png"
+              },
+              "awayTeam": {
+                "team_id": 709,
+                "team_name": "Pyunik Yerevan",
+                "logo": "https://media-1.api-sports.io/football/teams/709.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "Rakvere linnastaadion",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036994,
+              "homeTeam": {
+                "team_id": 4160,
+                "team_name": "Rīgas FS",
+                "logo": "https://media-2.api-sports.io/football/teams/4160.png"
+              },
+              "awayTeam": {
+                "team_id": 4196,
+                "team_name": "Makedonija GjP",
+                "logo": "https://media-1.api-sports.io/football/teams/4196.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "Slokas Stadionā",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036988,
+              "homeTeam": {
+                "team_id": 691,
+                "team_name": "Milsami Orhei",
+                "logo": "https://media-3.api-sports.io/football/teams/691.png"
+              },
+              "awayTeam": {
+                "team_id": 3874,
+                "team_name": "Panevėžys",
+                "logo": "https://media-3.api-sports.io/football/teams/3874.png"
+              },
+              "event_date": "2023-07-20T16:00:00.000Z",
+              "venue": "Complexul Sportiv Raional",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036990,
+              "homeTeam": {
+                "team_id": 1169,
+                "team_name": "Honka",
+                "logo": "https://media-1.api-sports.io/football/teams/1169.png"
+              },
+              "awayTeam": {
+                "team_id": 2259,
+                "team_name": "FK Tobol Kostanay",
+                "logo": "https://media-3.api-sports.io/football/teams/2259.png"
+              },
+              "event_date": "2023-07-20T16:00:00.000Z",
+              "venue": "Myyrmäen jalkapallostadion",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036984,
+              "homeTeam": {
+                "team_id": 2273,
+                "team_name": "FC Levadia Tallinn",
+                "logo": "https://media-2.api-sports.io/football/teams/2273.png"
+              },
+              "awayTeam": {
+                "team_id": 3554,
+                "team_name": "Žilina",
+                "logo": "https://media-3.api-sports.io/football/teams/3554.png"
+              },
+              "event_date": "2023-07-20T16:45:00.000Z",
+              "venue": "A. Le Coq Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036958,
+              "homeTeam": {
+                "team_id": 394,
+                "team_name": "Dinamo Minsk",
+                "logo": "https://media-2.api-sports.io/football/teams/394.png"
+              },
+              "awayTeam": {
+                "team_id": 654,
+                "team_name": "Zeljeznicar Sarajevo",
+                "logo": "https://media-3.api-sports.io/football/teams/654.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Azərsun Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036960,
+              "homeTeam": {
+                "team_id": 4633,
+                "team_name": "Zimbru",
+                "logo": "https://media-2.api-sports.io/football/teams/4633.png"
+              },
+              "awayTeam": {
+                "team_id": 2249,
+                "team_name": "La Fiorita",
+                "logo": "https://media-1.api-sports.io/football/teams/2249.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Stadionul Zimbru",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036964,
+              "homeTeam": {
+                "team_id": 705,
+                "team_name": "Dinamo Batumi",
+                "logo": "https://media-2.api-sports.io/football/teams/705.png"
+              },
+              "awayTeam": {
+                "team_id": 694,
+                "team_name": "Tirana",
+                "logo": "https://media-1.api-sports.io/football/teams/694.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Batumi Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036992,
+              "homeTeam": {
+                "team_id": 3499,
+                "team_name": "Dila",
+                "logo": "https://media-3.api-sports.io/football/teams/3499.png"
+              },
+              "awayTeam": {
+                "team_id": 2257,
+                "team_name": "Dunajska Streda",
+                "logo": "https://media-1.api-sports.io/football/teams/2257.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Stadioni Tengiz Burjanadze",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036950,
+              "homeTeam": {
+                "team_id": 387,
+                "team_name": "Neman",
+                "logo": "https://media-2.api-sports.io/football/teams/387.png"
+              },
+              "awayTeam": {
+                "team_id": 660,
+                "team_name": "FC Vaduz",
+                "logo": "https://media-2.api-sports.io/football/teams/660.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Alcufer Stadion",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036952,
+              "homeTeam": {
+                "team_id": 3327,
+                "team_name": "Egnatia Rrogozhinë",
+                "logo": "https://media-2.api-sports.io/football/teams/3327.png"
+              },
+              "awayTeam": {
+                "team_id": 3683,
+                "team_name": "Ararat-Armenia",
+                "logo": "https://media-3.api-sports.io/football/teams/3683.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Elbasan Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036967,
+              "homeTeam": {
+                "team_id": 580,
+                "team_name": "Vikingur Gota",
+                "logo": "https://media-3.api-sports.io/football/teams/580.png"
+              },
+              "awayTeam": {
+                "team_id": 3342,
+                "team_name": "Inter Club d'Escaldes",
+                "logo": "https://media-2.api-sports.io/football/teams/3342.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Við Djúpumýrar",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036970,
+              "homeTeam": {
+                "team_id": 12772,
+                "team_name": "Gjilani",
+                "logo": "https://media-2.api-sports.io/football/teams/12772.png"
+              },
+              "awayTeam": {
+                "team_id": 658,
+                "team_name": "Progres Niederkorn",
+                "logo": "https://media-3.api-sports.io/football/teams/658.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Stadiumi Fadil Vokrri",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036974,
+              "homeTeam": {
+                "team_id": 357,
+                "team_name": "GAP Connah S Quay FC",
+                "logo": "https://media-3.api-sports.io/football/teams/357.png"
+              },
+              "awayTeam": {
+                "team_id": 272,
+                "team_name": "KA Akureyri",
+                "logo": "https://media-1.api-sports.io/football/teams/272.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Park Hall Stadium",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036944,
+              "homeTeam": {
+                "team_id": 5352,
+                "team_name": "Glentoran",
+                "logo": "https://media-3.api-sports.io/football/teams/5352.png"
+              },
+              "awayTeam": {
+                "team_id": 2264,
+                "team_name": "Gzira United",
+                "logo": "https://media-1.api-sports.io/football/teams/2264.png"
+              },
+              "event_date": "2023-07-20T18:30:00.000Z",
+              "venue": "BetMcLean Oval",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036956,
+              "homeTeam": {
+                "team_id": 3742,
+                "team_name": "Arsenal Tivat",
+                "logo": "https://media-3.api-sports.io/football/teams/3742.png"
+              },
+              "awayTeam": {
+                "team_id": 582,
+                "team_name": "Alashkert",
+                "logo": "https://media-2.api-sports.io/football/teams/582.png"
+              },
+              "event_date": "2023-07-20T18:30:00.000Z",
+              "venue": "DG Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036940,
+              "homeTeam": {
+                "team_id": 3843,
+                "team_name": "St Patrick's Athl.",
+                "logo": "https://media-1.api-sports.io/football/teams/3843.png"
+              },
+              "awayTeam": {
+                "team_id": 578,
+                "team_name": "F91 Dudelange",
+                "logo": "https://media-1.api-sports.io/football/teams/578.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Richmond Park",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036946,
+              "homeTeam": {
+                "team_id": 5298,
+                "team_name": "Cosmos",
+                "logo": "https://media-2.api-sports.io/football/teams/5298.png"
+              },
+              "awayTeam": {
+                "team_id": 673,
+                "team_name": "Sutjeska",
+                "logo": "https://media-3.api-sports.io/football/teams/673.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Stadio Olimpico di Serravalle",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036965,
+              "homeTeam": {
+                "team_id": 584,
+                "team_name": "Dundalk",
+                "logo": "https://media-3.api-sports.io/football/teams/584.png"
+              },
+              "awayTeam": {
+                "team_id": 16135,
+                "team_name": "Magpies",
+                "logo": "https://media-3.api-sports.io/football/teams/16135.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Oriel Park",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036972,
+              "homeTeam": {
+                "team_id": 3339,
+                "team_name": "Vllaznia Shkodër",
+                "logo": "https://media-1.api-sports.io/football/teams/3339.png"
+              },
+              "awayTeam": {
+                "team_id": 583,
+                "team_name": "Linfield",
+                "logo": "https://media-2.api-sports.io/football/teams/583.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Stadiumi Loro Boriçi",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036976,
+              "homeTeam": {
+                "team_id": 2194,
+                "team_name": "Haverfordwest County AFC",
+                "logo": "https://media-2.api-sports.io/football/teams/2194.png"
+              },
+              "awayTeam": {
+                "team_id": 609,
+                "team_name": "Shkendija",
+                "logo": "https://media-2.api-sports.io/football/teams/609.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Cardiff City Stadium",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036980,
+              "homeTeam": {
+                "team_id": 670,
+                "team_name": "Derry City",
+                "logo": "https://media-2.api-sports.io/football/teams/670.png"
+              },
+              "awayTeam": {
+                "team_id": 4133,
+                "team_name": "HB",
+                "logo": "https://media-3.api-sports.io/football/teams/4133.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "The Ryan McBride Brandywell Stadium",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036982,
+              "homeTeam": {
+                "team_id": 278,
+                "team_name": "Vikingur Reykjavik",
+                "logo": "https://media-1.api-sports.io/football/teams/278.png"
+              },
+              "awayTeam": {
+                "team_id": 10124,
+                "team_name": "Riga",
+                "logo": "https://media-2.api-sports.io/football/teams/10124.png"
+              },
+              "event_date": "2023-07-20T18:45:00.000Z",
+              "venue": "Víkingsvöllur",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036938,
+              "homeTeam": {
+                "team_id": 2265,
+                "team_name": "Shkupi 1927",
+                "logo": "https://media-3.api-sports.io/football/teams/2265.png"
+              },
+              "awayTeam": {
+                "team_id": 3861,
+                "team_name": "Hegelmann Litauen",
+                "logo": "https://media-1.api-sports.io/football/teams/3861.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Toše Proeski Arena",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036954,
+              "homeTeam": {
+                "team_id": 679,
+                "team_name": "FK Sarajevo",
+                "logo": "https://media-3.api-sports.io/football/teams/679.png"
+              },
+              "awayTeam": {
+                "team_id": 685,
+                "team_name": "Torpedo Kutaisi",
+                "logo": "https://media-2.api-sports.io/football/teams/685.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Olimpijski Stadion Asim Ferhatović Hase",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036978,
+              "homeTeam": {
+                "team_id": 697,
+                "team_name": "Crusaders FC",
+                "logo": "https://media-1.api-sports.io/football/teams/697.png"
+              },
+              "awayTeam": {
+                "team_id": 2080,
+                "team_name": "haka",
+                "logo": "https://media-3.api-sports.io/football/teams/2080.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Seaview",
+              "day saison": "1st Qualifying Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brazil",
+      "flag": "https://media-1.api-sports.io/flags/br.svg",
+      "championship": [
+        {
+          "name": "Serie B",
+          "logo": "https://media-2.api-sports.io/football/leagues/72.png",
+          "leagueid": 5082,
+          "matches": [
+            {
+              "fixture_id": 1006619,
+              "homeTeam": {
+                "team_id": 145,
+                "team_name": "Avai",
+                "logo": "https://media-1.api-sports.io/football/teams/145.png"
+              },
+              "awayTeam": {
+                "team_id": 155,
+                "team_name": "Sampaio Correa",
+                "logo": "https://media-2.api-sports.io/football/teams/155.png"
+              },
+              "event_date": "2023-07-20T00:30:00.000Z",
+              "venue": "Estádio Aderbal Ramos da Silva",
+              "day saison": "Regular Season - 18",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1006622,
+              "homeTeam": {
+                "team_id": 123,
+                "team_name": "Sport Recife",
+                "logo": "https://media-2.api-sports.io/football/teams/123.png"
+              },
+              "awayTeam": {
+                "team_id": 136,
+                "team_name": "Vitoria",
+                "logo": "https://media-2.api-sports.io/football/teams/136.png"
+              },
+              "event_date": "2023-07-20T00:30:00.000Z",
+              "venue": "Estádio Adelmar da Costa Carvalho",
+              "day saison": "Regular Season - 18",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "1-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1006623,
+              "homeTeam": {
+                "team_id": 129,
+                "team_name": "Ceara",
+                "logo": "https://media-3.api-sports.io/football/teams/129.png"
+              },
+              "awayTeam": {
+                "team_id": 142,
+                "team_name": "Vila Nova",
+                "logo": "https://media-3.api-sports.io/football/teams/142.png"
+              },
+              "event_date": "2023-07-20T00:30:00.000Z",
+              "venue": "Estádio Governador Plácido Aderaldo Castelo",
+              "day saison": "Regular Season - 18",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1006626,
+              "homeTeam": {
+                "team_id": 754,
+                "team_name": "ABC",
+                "logo": "https://media-2.api-sports.io/football/teams/754.png"
+              },
+              "awayTeam": {
+                "team_id": 138,
+                "team_name": "Guarani Campinas",
+                "logo": "https://media-2.api-sports.io/football/teams/138.png"
+              },
+              "event_date": "2023-07-20T00:30:00.000Z",
+              "venue": "Arena das Dunas",
+              "day saison": "Regular Season - 18",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Carioca A2",
+          "logo": "https://media-1.api-sports.io/football/leagues/851.png",
+          "leagueid": 5129,
+          "matches": [
+            {
+              "fixture_id": 1017667,
+              "homeTeam": {
+                "team_id": 13111,
+                "team_name": "Gonçalense",
+                "logo": "https://media-3.api-sports.io/football/teams/13111.png"
+              },
+              "awayTeam": {
+                "team_id": 4857,
+                "team_name": "Resende",
+                "logo": "https://media-1.api-sports.io/football/teams/4857.png"
+              },
+              "event_date": "2023-07-20T17:45:00.000Z",
+              "venue": "Estádio Atílio Marotti",
+              "day saison": "1st Phase - 10",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "CBF Brasileiro U20",
+          "logo": "https://media-2.api-sports.io/football/leagues/740.png",
+          "leagueid": 5092,
+          "matches": [
+            {
+              "fixture_id": 1025337,
+              "homeTeam": {
+                "team_id": 12962,
+                "team_name": "Internacional U20",
+                "logo": "https://media-1.api-sports.io/football/teams/12962.png"
+              },
+              "awayTeam": {
+                "team_id": 13055,
+                "team_name": "Santos U20",
+                "logo": "https://media-2.api-sports.io/football/teams/13055.png"
+              },
+              "event_date": "2023-07-20T18:00:00.000Z",
+              "venue": "Estádio Morada dos Quero-Queros",
+              "day saison": "Quarter-finals",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1025339,
+              "homeTeam": {
+                "team_id": 13011,
+                "team_name": "Grêmio U20",
+                "logo": "https://media-1.api-sports.io/football/teams/13011.png"
+              },
+              "awayTeam": {
+                "team_id": 12998,
+                "team_name": "Corinthians U20",
+                "logo": "https://media-3.api-sports.io/football/teams/12998.png"
+              },
+              "event_date": "2023-07-20T19:30:00.000Z",
+              "venue": "Estádio Airton Ferreira da Silva",
+              "day saison": "Quarter-finals",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1025335,
+              "homeTeam": {
+                "team_id": 12984,
+                "team_name": "Athletico PR U20",
+                "logo": "https://media-1.api-sports.io/football/teams/12984.png"
+              },
+              "awayTeam": {
+                "team_id": 11054,
+                "team_name": "Flamengo U20",
+                "logo": "https://media-3.api-sports.io/football/teams/11054.png"
+              },
+              "event_date": "2023-07-20T22:00:00.000Z",
+              "venue": "CT do Caju- Centro de Treinamentos Alfredo Gottardi",
+              "day saison": "Quarter-finals",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "flag": "https://media-3.api-sports.io/flags/us.svg",
+      "championship": [
+        {
+          "name": "MLS All-Star",
+          "logo": "https://media-2.api-sports.io/football/leagues/866.png",
+          "leagueid": 5162,
+          "matches": [
+            {
+              "fixture_id": 1023696,
+              "homeTeam": {
+                "team_id": 17665,
+                "team_name": "MLS All-Stars",
+                "logo": "https://media-3.api-sports.io/football/teams/17665.png"
+              },
+              "awayTeam": {
+                "team_id": 42,
+                "team_name": "Arsenal",
+                "logo": "https://media-1.api-sports.io/football/teams/42.png"
+              },
+              "event_date": "2023-07-20T00:30:00.000Z",
+              "venue": "Audi Field",
+              "day saison": "R71924",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Colombia",
+      "flag": "https://media-3.api-sports.io/flags/co.svg",
+      "championship": [
+        {
+          "name": "Primera A",
+          "logo": "https://media-1.api-sports.io/football/leagues/239.png",
+          "leagueid": 4992,
+          "matches": [
+            {
+              "fixture_id": 990309,
+              "homeTeam": {
+                "team_id": 1139,
+                "team_name": "Santa Fe",
+                "logo": "https://media-3.api-sports.io/football/teams/1139.png"
+              },
+              "awayTeam": {
+                "team_id": 1133,
+                "team_name": "Jaguares",
+                "logo": "https://media-1.api-sports.io/football/teams/1133.png"
+              },
+              "event_date": "2023-07-20T01:00:00.000Z",
+              "venue": "Estadio Nemesio Camacho El Campín",
+              "day saison": "Clausura - 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Primera B",
+          "logo": "https://media-1.api-sports.io/football/leagues/240.png",
+          "leagueid": 5003,
+          "matches": [
+            {
+              "fixture_id": 1028005,
+              "homeTeam": {
+                "team_id": 1469,
+                "team_name": "Orsomarso",
+                "logo": "https://media-3.api-sports.io/football/teams/1469.png"
+              },
+              "awayTeam": {
+                "team_id": 1470,
+                "team_name": "Cucuta",
+                "logo": "https://media-1.api-sports.io/football/teams/1470.png"
+              },
+              "event_date": "2023-07-20T21:00:00.000Z",
+              "venue": "Estadio Francisco Rivera Escobar",
+              "day saison": "Clausura - 1",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "flag": "https://media-1.api-sports.io/flags/ca.svg",
+      "championship": [
+        {
+          "name": "Pacific Coast Soccer League",
+          "logo": "https://media-1.api-sports.io/football/leagues/260.png",
+          "leagueid": 5151,
+          "matches": [
+            {
+              "fixture_id": 1021773,
+              "homeTeam": {
+                "team_id": 3556,
+                "team_name": "Khalsa",
+                "logo": "https://media-2.api-sports.io/football/teams/3556.png"
+              },
+              "awayTeam": {
+                "team_id": 3561,
+                "team_name": "Tigers Vancouver",
+                "logo": "https://media-3.api-sports.io/football/teams/3561.png"
+              },
+              "event_date": "2023-07-20T03:00:00.000Z",
+              "venue": "Mercer Stadium Track",
+              "day saison": "Regular Season - 7",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maldives",
+      "flag": "https://media-2.api-sports.io/flags/mv.svg",
+      "championship": [
+        {
+          "name": "Dhivehi Premier League",
+          "logo": "https://media-2.api-sports.io/football/leagues/855.png",
+          "leagueid": 5198,
+          "matches": [
+            {
+              "fixture_id": 1074547,
+              "homeTeam": {
+                "team_id": 8044,
+                "team_name": "Maziya",
+                "logo": "https://media-2.api-sports.io/football/teams/8044.png"
+              },
+              "awayTeam": {
+                "team_id": 21312,
+                "team_name": "Buru",
+                "logo": "https://media-1.api-sports.io/football/teams/21312.png"
+              },
+              "event_date": "2023-07-20T11:00:00.000Z",
+              "venue": "National Football Stadium",
+              "day saison": "Regular Season - 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074548,
+              "homeTeam": {
+                "team_id": 16958,
+                "team_name": "Green Streets",
+                "logo": "https://media-3.api-sports.io/football/teams/16958.png"
+              },
+              "awayTeam": {
+                "team_id": 8038,
+                "team_name": "TC Sports Club",
+                "logo": "https://media-2.api-sports.io/football/teams/8038.png"
+              },
+              "event_date": "2023-07-20T16:00:00.000Z",
+              "venue": "National Football Stadium",
+              "day saison": "Regular Season - 5",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Singapore",
+      "flag": "https://media-3.api-sports.io/flags/sg.svg",
+      "championship": [
+        {
+          "name": "Premier League",
+          "logo": "https://media-3.api-sports.io/football/leagues/368.png",
+          "leagueid": 5030,
+          "matches": [
+            {
+              "fixture_id": 997940,
+              "homeTeam": {
+                "team_id": 4204,
+                "team_name": "Home United",
+                "logo": "https://media-1.api-sports.io/football/teams/4204.png"
+              },
+              "awayTeam": {
+                "team_id": 10077,
+                "team_name": "Tanjong Pagar",
+                "logo": "https://media-2.api-sports.io/football/teams/10077.png"
+              },
+              "event_date": "2023-07-20T11:45:00.000Z",
+              "venue": "Bishan Stadium",
+              "day saison": "Regular Season - 9",
+              "status": "First Half",
+              "statusShort": "1H",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kazakhstan",
+      "flag": "https://media-1.api-sports.io/flags/kz.svg",
+      "championship": [
+        {
+          "name": "1. Division",
+          "logo": "https://media-1.api-sports.io/football/leagues/388.png",
+          "leagueid": 5125,
+          "matches": [
+            {
+              "fixture_id": 1016731,
+              "homeTeam": {
+                "team_id": 4545,
+                "team_name": "Akademiya Ontustik",
+                "logo": "https://media-1.api-sports.io/football/teams/4545.png"
+              },
+              "awayTeam": {
+                "team_id": 4553,
+                "team_name": "Kyran",
+                "logo": "https://media-2.api-sports.io/football/teams/4553.png"
+              },
+              "event_date": "2023-07-20T12:00:00.000Z",
+              "venue": "Futbol Ortalığı BÏİK Main Field",
+              "day saison": "Regular Season - 16",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1016732,
+              "homeTeam": {
+                "team_id": 10414,
+                "team_name": "Arys",
+                "logo": "https://media-3.api-sports.io/football/teams/10414.png"
+              },
+              "awayTeam": {
+                "team_id": 16611,
+                "team_name": "Zhenys",
+                "logo": "https://media-3.api-sports.io/football/teams/16611.png"
+              },
+              "event_date": "2023-07-20T12:00:00.000Z",
+              "venue": "Stadion Lokomotiv",
+              "day saison": "Regular Season - 16",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1016733,
+              "homeTeam": {
+                "team_id": 4556,
+                "team_name": "Sport Academy Kairat",
+                "logo": "https://media-2.api-sports.io/football/teams/4556.png"
+              },
+              "awayTeam": {
+                "team_id": 18805,
+                "team_name": "Khan Tengri",
+                "logo": "https://media-2.api-sports.io/football/teams/18805.png"
+              },
+              "event_date": "2023-07-20T13:00:00.000Z",
+              "venue": "Stadion im. Е. Pahlevanidi",
+              "day saison": "Regular Season - 16",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1016734,
+              "homeTeam": {
+                "team_id": 4547,
+                "team_name": "Akzhayik",
+                "logo": "https://media-2.api-sports.io/football/teams/4547.png"
+              },
+              "awayTeam": {
+                "team_id": 4551,
+                "team_name": "Ekibastuz",
+                "logo": "https://media-2.api-sports.io/football/teams/4551.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": "Stadion Akzhayik",
+              "day saison": "Regular Season - 16",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iraq",
+      "flag": "https://media-2.api-sports.io/flags/iq.svg",
+      "championship": [
+        {
+          "name": "Iraqi League",
+          "logo": "https://media-2.api-sports.io/football/leagues/542.png",
+          "leagueid": 4834,
+          "matches": [
+            {
+              "fixture_id": 1073817,
+              "homeTeam": {
+                "team_id": 6689,
+                "team_name": "Newroz",
+                "logo": "https://media-3.api-sports.io/football/teams/6689.png"
+              },
+              "awayTeam": {
+                "team_id": 8009,
+                "team_name": "Al Quwa Al Jawiya",
+                "logo": "https://media-1.api-sports.io/football/teams/8009.png"
+              },
+              "event_date": "2023-07-20T14:00:00.000Z",
+              "venue": "Sulaymaniyah Stadium",
+              "day saison": "Regular Season - 38",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1073818,
+              "homeTeam": {
+                "team_id": 15543,
+                "team_name": "Al Diwaniya",
+                "logo": "https://media-1.api-sports.io/football/teams/15543.png"
+              },
+              "awayTeam": {
+                "team_id": 11071,
+                "team_name": "Naft",
+                "logo": "https://media-1.api-sports.io/football/teams/11071.png"
+              },
+              "event_date": "2023-07-20T15:00:00.000Z",
+              "venue": "Karbala Stadium",
+              "day saison": "Regular Season - 38",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1073819,
+              "homeTeam": {
+                "team_id": 8010,
+                "team_name": "Al Zawra'a",
+                "logo": "https://media-2.api-sports.io/football/teams/8010.png"
+              },
+              "awayTeam": {
+                "team_id": 20463,
+                "team_name": "Duhok",
+                "logo": "https://media-3.api-sports.io/football/teams/20463.png"
+              },
+              "event_date": "2023-07-20T16:15:00.000Z",
+              "venue": "Al-Zawraa Stadium",
+              "day saison": "Regular Season - 38",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1073820,
+              "homeTeam": {
+                "team_id": 11073,
+                "team_name": "Naft Al-Wasat",
+                "logo": "https://media-2.api-sports.io/football/teams/11073.png"
+              },
+              "awayTeam": {
+                "team_id": 20464,
+                "team_name": "Karbala",
+                "logo": "https://media-2.api-sports.io/football/teams/20464.png"
+              },
+              "event_date": "2023-07-20T18:30:00.000Z",
+              "venue": "Al Najaf Stadium",
+              "day saison": "Regular Season - 38",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "flag": "https://media-3.api-sports.io/flags/bg.svg",
+      "championship": [
+        {
+          "name": "Second League",
+          "logo": "https://media-2.api-sports.io/football/leagues/173.png",
+          "leagueid": 5293,
+          "matches": [
+            {
+              "fixture_id": 1039125,
+              "homeTeam": {
+                "team_id": 8528,
+                "team_name": "Yantra 2019",
+                "logo": "https://media-1.api-sports.io/football/teams/8528.png"
+              },
+              "awayTeam": {
+                "team_id": 8540,
+                "team_name": "Belasitsa",
+                "logo": "https://media-3.api-sports.io/football/teams/8540.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "Stadion Hristo Botev",
+              "day saison": "Regular Season - 2",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slovakia",
+      "flag": "https://media-3.api-sports.io/flags/sk.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-3.api-sports.io/football/leagues/680.png",
+          "leagueid": 5439,
+          "matches": [
+            {
+              "fixture_id": 1066959,
+              "homeTeam": {
+                "team_id": 21749,
+                "team_name": "Iskra Nováky",
+                "logo": "https://media-1.api-sports.io/football/teams/21749.png"
+              },
+              "awayTeam": {
+                "team_id": 14987,
+                "team_name": "Kanianka",
+                "logo": "https://media-2.api-sports.io/football/teams/14987.png"
+              },
+              "event_date": "2023-07-20T15:30:00.000Z",
+              "venue": "Futbalový štadión Nováky",
+              "day saison": "Preliminary Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "flag": "https://media-3.api-sports.io/flags/il.svg",
+      "championship": [
+        {
+          "name": "Toto Cup Ligat Al",
+          "logo": "https://media-3.api-sports.io/football/leagues/385.png",
+          "leagueid": 5280,
+          "matches": [
+            {
+              "fixture_id": 1037331,
+              "homeTeam": {
+                "team_id": 563,
+                "team_name": "Hapoel Beer Sheva",
+                "logo": "https://media-2.api-sports.io/football/teams/563.png"
+              },
+              "awayTeam": {
+                "team_id": 604,
+                "team_name": "Maccabi Tel Aviv",
+                "logo": "https://media-1.api-sports.io/football/teams/604.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Yaakov Turner Toto Stadium",
+              "day saison": "European Qualifiers Play-offs",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Austria",
+      "flag": "https://media-1.api-sports.io/flags/at.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-3.api-sports.io/football/leagues/220.png",
+          "leagueid": 5308,
+          "matches": [
+            {
+              "fixture_id": 1042872,
+              "homeTeam": {
+                "team_id": 4954,
+                "team_name": "Neusiedl",
+                "logo": "https://media-1.api-sports.io/football/teams/4954.png"
+              },
+              "awayTeam": {
+                "team_id": 1402,
+                "team_name": "SV Lafnitz",
+                "logo": "https://media-3.api-sports.io/football/teams/1402.png"
+              },
+              "event_date": "2023-07-20T17:00:00.000Z",
+              "venue": "Sportzentrum Neusiedl",
+              "day saison": "1st Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paraguay",
+      "flag": "https://media-3.api-sports.io/flags/py.svg",
+      "championship": [
+        {
+          "name": "Copa Paraguay",
+          "logo": "https://media-2.api-sports.io/football/leagues/501.png",
+          "leagueid": 5214,
+          "matches": [
+            {
+              "fixture_id": 1066985,
+              "homeTeam": {
+                "team_id": 21374,
+                "team_name": "3 de Noviembre",
+                "logo": "https://media-3.api-sports.io/football/teams/21374.png"
+              },
+              "awayTeam": {
+                "team_id": 2138,
+                "team_name": "Guairena FC",
+                "logo": "https://media-3.api-sports.io/football/teams/2138.png"
+              },
+              "event_date": "2023-07-20T19:00:00.000Z",
+              "venue": "Estadio Parque del Guairá",
+              "day saison": "3rd Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1066986,
+              "homeTeam": {
+                "team_id": 10475,
+                "team_name": "Cristóbal Colón JAS",
+                "logo": "https://media-1.api-sports.io/football/teams/10475.png"
+              },
+              "awayTeam": {
+                "team_id": 1175,
+                "team_name": "Nacional Asuncion",
+                "logo": "https://media-1.api-sports.io/football/teams/1175.png"
+              },
+              "event_date": "2023-07-20T21:30:00.000Z",
+              "venue": "Estadio Arsenio Erico",
+              "day saison": "3rd Round",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iceland",
+      "flag": "https://media-2.api-sports.io/flags/is.svg",
+      "championship": [
+        {
+          "name": "1. Deild",
+          "logo": "https://media-3.api-sports.io/football/leagues/165.png",
+          "leagueid": 4980,
+          "matches": [
+            {
+              "fixture_id": 985449,
+              "homeTeam": {
+                "team_id": 2114,
+                "team_name": "Leiknir R.",
+                "logo": "https://media-3.api-sports.io/football/teams/2114.png"
+              },
+              "awayTeam": {
+                "team_id": 829,
+                "team_name": "Throttur Reykjavik",
+                "logo": "https://media-2.api-sports.io/football/teams/829.png"
+              },
+              "event_date": "2023-07-20T19:15:00.000Z",
+              "venue": "Leiknisvöllur",
+              "day saison": "Regular Season - 13",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Barbados",
+      "flag": "https://media-3.api-sports.io/flags/bb.svg",
+      "championship": [
+        {
+          "name": "Premier League",
+          "logo": "https://media-2.api-sports.io/football/leagues/422.png",
+          "leagueid": 5006,
+          "matches": [
+            {
+              "fixture_id": 1003536,
+              "homeTeam": {
+                "team_id": 8403,
+                "team_name": "Ellerton",
+                "logo": "https://media-2.api-sports.io/football/teams/8403.png"
+              },
+              "awayTeam": {
+                "team_id": 8408,
+                "team_name": "St. Andrew Lions",
+                "logo": "https://media-2.api-sports.io/football/teams/8408.png"
+              },
+              "event_date": "2023-07-20T23:00:00.000Z",
+              "venue": "Wildey Turf",
+              "day saison": "Regular Season - 11",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
