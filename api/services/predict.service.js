@@ -22,7 +22,7 @@ async function createPredictService(req, res) {
   res.status(response.statusCode).json(response);
 }
 
-async function getPredictsService(req, res) {
+async function getPredictsService(req) {
   const { dateFrom, dateTo, type, search  } = req.query;
   const page = parseInt(req.query.page) || 1;
   const limit = parseInt(req.query.limit) || 10;
@@ -61,7 +61,7 @@ async function getPredictsService(req, res) {
       // Aucun élément trouvé, renvoyer un message
       const response = successResponse('Aucune prédiction correspondante.');
       console.log(response)
-      return res.status(response.statusCode).json(response);
+      return response;
     }
 
     const paginatedResults = paginate(predictions, page, limit);
@@ -80,7 +80,7 @@ async function getPredictsService(req, res) {
   } catch (error) {
     console.error('Failed to get predicts:', error);
     const response = errorResponse('Failed to get predicts');
-    return res.status(response.statusCode).json(response);
+    return response;
   }
 }
 
