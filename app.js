@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const dbConnect = require('./api/config/dbConnect');
 const cors = require('cors');
 const appRoutes = require("./api/routes/index");
-const scheduleTask = require("./api/services/job/scheduleTask");
+const cron = require("./api/services/job/scheduleTask");
 const fixtures = require("./api/services/fixture.service");
 const bodyParser = require("body-parser");
 
@@ -14,9 +14,9 @@ dbConnect();
 
 
 // Get daily data from api-football
-scheduleTask.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(2));
-scheduleTask.scheduleTask("00 05 01 * * *", () => fixtures.correctPreviousDayEvents());
-scheduleTask.scheduleTask("00 05 02 * * *", () => fixtures.correctPreviousDayEvents());
+cron.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(2));
+cron.scheduleTask("00 05 01 * * *", () => fixtures.correctPreviousDayEvents());
+cron.scheduleTask("00 05 02 * * *", () => fixtures.correctPreviousDayEvents());
 
 // App initialization
 const app = express();
