@@ -17,4 +17,4 @@ router.get('/getMatches', fixtureController.findMatchesByChampionship);
 
 }
 
-module.exports = predictRoutes;
+module.exports = predictRoutes;  

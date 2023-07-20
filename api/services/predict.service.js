@@ -72,8 +72,8 @@ async function getPredictsService(req, res) {
       totaItemsPerPage: paginatedResults.limit,
       totalItems: paginatedResults.totalItems,
       totalPages: paginatedResults.totalPages,
-      results: paginatedResults.results
-    });
+      results: paginatedResults.results 
+    }); 
 
     return response;
 

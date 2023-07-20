@@ -59,7 +59,7 @@ async function getAll(req, res) {
 async function getById(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getById', { id: Id });
-  console.log(response); 
+  console.log(response);  
   return res.status(response.statusCode).json(response);
 }
 
