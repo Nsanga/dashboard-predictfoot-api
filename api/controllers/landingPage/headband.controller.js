@@ -6,6 +6,12 @@ const getById = async (req, res) => {
 
 };
 
+const getAll = async (req, res) => {
+     // Get a headband
+     await ServiceHeadband.getAll(req, res);
+   
+   };
+
 const create = async (req, res) => {
      // Create a headband
      await ServiceHeadband.create(req, res);
@@ -21,4 +27,4 @@ const deleted = async (req, res) => {
      await ServiceHeadband.deleted(req, res);
 };
 
-module.exports = { getById, create, update, deleted };
+module.exports = { getAll, getById, create, update, deleted };

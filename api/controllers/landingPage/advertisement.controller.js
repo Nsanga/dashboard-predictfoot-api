@@ -1,5 +1,11 @@
 var ServiceAdvertisement = require('../../services/landingPage/advertisement.service');
 
+const getAll = async (req, res) => {
+     // Get all advertisement
+     await ServiceAdvertisement.getAll(req, res);
+   
+   };
+
 const getById = async (req, res) => {
   // Get an advertisement
   await ServiceAdvertisement.getById(req, res);
@@ -21,4 +27,4 @@ const deleted = async (req, res) => {
      await ServiceAdvertisement.deleted(req, res);
 };
 
-module.exports = { getById, create, update, deleted };
+module.exports = { getAll, getById, create, update, deleted };

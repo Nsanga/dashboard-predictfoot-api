@@ -24,7 +24,7 @@ async function create(req, res) {
     console.log('Uploaded image URL:', imageUrl);
 
     // Update the formData with the S3 image URL
-    formData.image = imageUrl;
+    formData.image = imageUrl; 
 
     // Create the Grip document
     const grip = new Grip(formData);

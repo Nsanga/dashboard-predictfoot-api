@@ -20,6 +20,22 @@ async function create(req, res) {
   res.status(response.statusCode).json(response);
 }
 
+async function getAll(req, res) {
+  try {
+    const response = await performCrudOperationWithResponse('getAll');
+    if (response.data && response.data.length > 0) {
+      // Retournez uniquement le premier document s'il existe
+      response.data = response.data[0];
+    }
+    console.log(response);
+    return res.status(response.statusCode).json(response);
+  } catch (error) {
+    console.error('Failed to get all statistics:', error);
+    const response = errorResponse('Failed to get all statistics');
+    res.status(response.statusCode).json(response);
+  }
+}
+
 async function getById(req, res) {
   const { Id } = req.query;
   const response = await performCrudOperationWithResponse('getById', { id: Id });
@@ -44,6 +60,7 @@ async function deleted(req, res) {
 module.exports = {
   create,
   getById,
+  getAll,
   update,
   deleted,
 };

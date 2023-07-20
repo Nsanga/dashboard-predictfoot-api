@@ -14,6 +14,7 @@ const headbandRoutes = app => {
 
 //Get a list of all predict
 router.get('/getById', headbandController.getById);
+router.get('/getAll', headbandController.getAll);
 router.post('/create', uploads.single('image'), headbandController.create);
 router.put('/update', uploads.single('image'), headbandController.update);
 router.delete('/delete', headbandController.deleted);

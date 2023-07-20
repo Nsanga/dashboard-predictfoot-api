@@ -10,6 +10,7 @@ const statisticRoutes = app => {
 
 
 //Get a list of all predict
+router.get('/getAll', statisticController.getAll);
 router.get('/getById', statisticController.getById);
 router.post('/create', statisticController.create);
 router.put('/update', statisticController.update);
