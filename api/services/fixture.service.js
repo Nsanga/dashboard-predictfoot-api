@@ -147,14 +147,18 @@ const extractCountryInJson = async (path) => {
   }
 };
 
-const extractChampionshipInJson = async (path) => {
+const extractChampionshipByCountry = async (path, countryName) => {
   try {
-    const data = await fs.readFile(path);
+    const data = await fs.promises.readFile(path);
     const rawdata = JSON.parse(data);
+
+    const countryData = rawdata.country.find(country => country.name === countryName);
+    if (!countryData) {
+      throw new Error(`Country "${countryName}" not found in the JSON file.`);
+    }
+
     const championships = {
-      championship: rawdata.country.flatMap(item =>
-        item.championship.map(champ => ({ name: champ.name, logo: champ.logo }))
-      )
+      championship: countryData.championship.map(champ => ({ name: champ.name, logo: champ.logo }))
     };
     return championships;
   } catch (error) {
@@ -180,8 +184,7 @@ const extractFixturesInJson = (path, championshipName) => {
 async function findChampionshipsByCountry(req, res) {
   try {
     const pathFile = await findFileByDate("./api/data/api-football",req.query.date)
-    const countries = await extractCountryInJson(pathFile)
-    const result = await extractChampionshipInJson(pathFile,countries)
+    const result = await extractChampionshipByCountry(pathFile,req.query.country)
     const response = successResponse(result);
     return res.status(response.statusCode).json(response);
   } catch (error) {
