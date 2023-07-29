@@ -84,12 +84,6 @@ async function getPredictsService(req) {
   }
 }
 
-async function getOnePredictService(req, res) {
-  const { Id } = req.params;
-  const response = await performCrudOperationWithResponse('getById', { Id });
-  res.status(response.statusCode).json(response);
-}
-
 async function updatePredictService(req) {
   try {
     const { fixture_id } = req.query;
