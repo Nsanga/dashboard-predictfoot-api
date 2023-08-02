@@ -1,20 +1,28 @@
-var express = require('express');
-var router = express.Router();
+// fixture.route.js
+const express = require("express");
+const router = express.Router();
 
 // Require controller modules.
-var fixtureController = require('../controllers/fixture.controller');
+const {
+  getCountriesByDate ,
+  getChampionshipsByCountry,
+  getMatchesByChampionship,
+} = require("../controllers/fixture.controller");
 
-const predictRoutes = app => {
+// Function to set up the fixture routes and bind them to the app.
+const setupFixtureRoutes = (app) => {
   app.use("/fixture", router);
 
+  // Route to get countries based on the date of fixtures.
+  router.get("/getCountries", getCountriesByDate );
 
+  // Route to get championships based on the selected country.
+  router.get("/getChampionships", getChampionshipsByCountry);
 
-//route fixture
-router.get('/getCountries', fixtureController.findCountriesByDate);
-router.get('/getChampionships', fixtureController.findChampionshipsByCountry);
-router.get('/getMatches', fixtureController.findMatchesByChampionship);
+  // Route to get matches based on the selected championship.
+  router.get("/getMatches", getMatchesByChampionship);
+};
 
-
-}
-
-module.exports = predictRoutes;
+module.exports = {
+  setupFixtureRoutes
+};

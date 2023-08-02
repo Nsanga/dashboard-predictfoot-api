@@ -15,11 +15,14 @@ async function performCrudOperationWithResponse(operation, params) {
   }
 }
 
-async function createPredictService(req, res) {
+async function createPredictService(req) {
   const formData = req.body;
-  const response = await performCrudOperationWithResponse('create', formData);
-  console.log(response)
-  res.status(response.statusCode).json(response);
+  try{
+  return  performCrudOperationWithResponse('create', formData);
+} catch (error) {
+  console.log(error)
+  return  errorResponse(`Failed to create  predict : ${formData}`);
+}
 }
 
 async function getPredictsService(req) {
@@ -60,7 +63,6 @@ async function getPredictsService(req) {
     if (predictions.length === 0) {
       // Aucun élément trouvé, renvoyer un message
       const response = successResponse('Aucune prédiction correspondante.');
-      console.log(response)
       return response;
     }
 
@@ -79,15 +81,8 @@ async function getPredictsService(req) {
 
   } catch (error) {
     console.error('Failed to get predicts:', error);
-    const response = errorResponse('Failed to get predicts');
-    return response;
+    return errorResponse('Failed to get predicts');
   }
-}
-
-async function getOnePredictService(req, res) {
-  const { Id } = req.params;
-  const response = await performCrudOperationWithResponse('getById', { Id });
-  res.status(response.statusCode).json(response);
 }
 
 async function updatePredictService(req) {
@@ -101,16 +96,19 @@ async function updatePredictService(req) {
     return response;
   } catch (error) {
     console.log(error)
-    const response = errorResponse(`Failed to update predict : ${fixture_id}`);
-    return response;
+    return errorResponse(`Failed to update predict : ${fixture_id}`);
   }
 }
 
-async function deletePredictService(req, res) {
-  const { Id } = req.query;
-  await performCrudOperation(Predict, 'delete', { id: Id });
-  const response = successResponse(null, 'Predict deleted successfully');
-  res.status(response.statusCode).json(response);
+async function deletePredictService(req) {
+  const { id } = req.query;
+  try{
+  await performCrudOperation(Predict, 'delete', { id: id });
+  return successResponse({'id':id}, 'Predict deleted successfully');
+} catch (error) {
+  console.log(error)
+  return  errorResponse(`Failed to delete predict : ${fixture_id}`);
+}
 }
 
 module.exports = {
