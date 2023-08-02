@@ -92,6 +92,7 @@ async function updatePredictService(req) {
       filter: { 'fixture.fixture_id': fixture_id },
       updates: formData
     });
+    console.log(response)
     return response;
   } catch (error) {
     console.log(error)

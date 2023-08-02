@@ -1,0 +1,2987 @@
+{
+  "results": 104,
+  "country": [
+    {
+      "name": "World",
+      "flag": null,
+      "championship": [
+        {
+          "name": "Leagues Cup",
+          "logo": "https://media-3.api-sports.io/football/leagues/772.png",
+          "leagueid": 5113,
+          "matches": [
+            {
+              "fixture_id": 1013807,
+              "homeTeam": {
+                "team_id": 2287,
+                "team_name": "Club America",
+                "logo": "https://media-3.api-sports.io/football/teams/2287.png"
+              },
+              "awayTeam": {
+                "team_id": 1613,
+                "team_name": "Columbus Crew",
+                "logo": "https://media-1.api-sports.io/football/teams/1613.png"
+              },
+              "event_date": "2023-08-01T00:00:00.000Z",
+              "venue": "Lower.com Field",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "1-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013808,
+              "homeTeam": {
+                "team_id": 2291,
+                "team_name": "Puebla",
+                "logo": "https://media-3.api-sports.io/football/teams/2291.png"
+              },
+              "awayTeam": {
+                "team_id": 1607,
+                "team_name": "Chicago Fire",
+                "logo": "https://media-1.api-sports.io/football/teams/1607.png"
+              },
+              "event_date": "2023-08-01T00:00:00.000Z",
+              "venue": "SeatGeek Stadium",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "PEN",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-1",
+                "extratime": "0-0",
+                "penalty": "10-9"
+              }
+            },
+            {
+              "fixture_id": 1013809,
+              "homeTeam": {
+                "team_id": 2278,
+                "team_name": "Guadalajara Chivas",
+                "logo": "https://media-1.api-sports.io/football/teams/2278.png"
+              },
+              "awayTeam": {
+                "team_id": 1611,
+                "team_name": "Sporting Kansas City",
+                "logo": "https://media-2.api-sports.io/football/teams/1611.png"
+              },
+              "event_date": "2023-08-01T02:00:00.000Z",
+              "venue": "Children's Mercy Park",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "0-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013810,
+              "homeTeam": {
+                "team_id": 2281,
+                "team_name": "Toluca",
+                "logo": "https://media-3.api-sports.io/football/teams/2281.png"
+              },
+              "awayTeam": {
+                "team_id": 1610,
+                "team_name": "Colorado Rapids",
+                "logo": "https://media-1.api-sports.io/football/teams/1610.png"
+              },
+              "event_date": "2023-08-01T03:40:00.000Z",
+              "venue": "Dick's Sporting Goods Park",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 4,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "4-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "World Cup - Women",
+          "logo": "https://media-2.api-sports.io/football/leagues/8.png",
+          "leagueid": 5111,
+          "matches": [
+            {
+              "fixture_id": 1013590,
+              "homeTeam": {
+                "team_id": 1769,
+                "team_name": "Portugal W",
+                "logo": "https://media-3.api-sports.io/football/teams/1769.png"
+              },
+              "awayTeam": {
+                "team_id": 1718,
+                "team_name": "USA W",
+                "logo": "https://media-2.api-sports.io/football/teams/1718.png"
+              },
+              "event_date": "2023-08-01T07:00:00.000Z",
+              "venue": "Eden Park",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013591,
+              "homeTeam": {
+                "team_id": 17895,
+                "team_name": "Vietnam W",
+                "logo": "https://media-1.api-sports.io/football/teams/17895.png"
+              },
+              "awayTeam": {
+                "team_id": 1733,
+                "team_name": "Netherlands W",
+                "logo": "https://media-3.api-sports.io/football/teams/1733.png"
+              },
+              "event_date": "2023-08-01T07:00:00.000Z",
+              "venue": "Forsyth Barr Stadium",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 7,
+              "score": {
+                "halftime": "0-5",
+                "fulltime": "0-7",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013592,
+              "homeTeam": {
+                "team_id": 1723,
+                "team_name": "China W",
+                "logo": "https://media-2.api-sports.io/football/teams/1723.png"
+              },
+              "awayTeam": {
+                "team_id": 1721,
+                "team_name": "England W",
+                "logo": "https://media-1.api-sports.io/football/teams/1721.png"
+              },
+              "event_date": "2023-08-01T11:00:00.000Z",
+              "venue": "Coopers Stadium",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 6,
+              "score": {
+                "halftime": "0-3",
+                "fulltime": "1-6",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1013593,
+              "homeTeam": {
+                "team_id": 14459,
+                "team_name": "Haiti W",
+                "logo": "https://media-2.api-sports.io/football/teams/14459.png"
+              },
+              "awayTeam": {
+                "team_id": 1779,
+                "team_name": "Denmark W",
+                "logo": "https://media-2.api-sports.io/football/teams/1779.png"
+              },
+              "event_date": "2023-08-01T11:00:00.000Z",
+              "venue": "Perth Rectangular Stadium",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "0-2",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Friendlies Clubs",
+          "logo": "https://media-3.api-sports.io/football/leagues/667.png",
+          "leagueid": 4991,
+          "matches": [
+            {
+              "fixture_id": 1030320,
+              "homeTeam": {
+                "team_id": 2763,
+                "team_name": "Incheon United",
+                "logo": "https://media-3.api-sports.io/football/teams/2763.png"
+              },
+              "awayTeam": {
+                "team_id": 497,
+                "team_name": "AS Roma",
+                "logo": "https://media-1.api-sports.io/football/teams/497.png"
+              },
+              "event_date": "2023-08-01T10:00:00.000Z",
+              "venue": "Incheon Munhak Stadium",
+              "day saison": "Club Friendlies 5",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030322,
+              "homeTeam": {
+                "team_id": 85,
+                "team_name": "Paris Saint Germain",
+                "logo": "https://media-2.api-sports.io/football/teams/85.png"
+              },
+              "awayTeam": {
+                "team_id": 505,
+                "team_name": "Inter",
+                "logo": "https://media-1.api-sports.io/football/teams/505.png"
+              },
+              "event_date": "2023-08-01T10:00:00.000Z",
+              "venue": "Japan National Stadium",
+              "day saison": "Club Friendlies 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072525,
+              "homeTeam": {
+                "team_id": 180,
+                "team_name": "FC Heidenheim",
+                "logo": "https://media-3.api-sports.io/football/teams/180.png"
+              },
+              "awayTeam": {
+                "team_id": 3403,
+                "team_name": "Pafos",
+                "logo": "https://media-3.api-sports.io/football/teams/3403.png"
+              },
+              "event_date": "2023-08-01T11:00:00.000Z",
+              "venue": "Silberstadt Arena Schwaz",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1061305,
+              "homeTeam": {
+                "team_id": 4751,
+                "team_name": "Gouveia",
+                "logo": "https://media-2.api-sports.io/football/teams/4751.png"
+              },
+              "awayTeam": {
+                "team_id": 218,
+                "team_name": "Tondela",
+                "logo": "https://media-1.api-sports.io/football/teams/218.png"
+              },
+              "event_date": "2023-08-01T12:00:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1043305,
+              "homeTeam": {
+                "team_id": 198,
+                "team_name": "ADO Den Haag",
+                "logo": "https://media-2.api-sports.io/football/teams/198.png"
+              },
+              "awayTeam": {
+                "team_id": 426,
+                "team_name": "Sparta Rotterdam",
+                "logo": "https://media-3.api-sports.io/football/teams/426.png"
+              },
+              "event_date": "2023-08-01T12:30:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "1-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097213,
+              "homeTeam": {
+                "team_id": 164,
+                "team_name": "FSV Mainz 05",
+                "logo": "https://media-1.api-sports.io/football/teams/164.png"
+              },
+              "awayTeam": {
+                "team_id": 1011,
+                "team_name": "FC ST. Gallen",
+                "logo": "https://media-1.api-sports.io/football/teams/1011.png"
+              },
+              "event_date": "2023-08-01T14:00:00.000Z",
+              "venue": "28 BLACK ARENA-Nonntal",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 4,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-1",
+                "fulltime": "4-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097180,
+              "homeTeam": {
+                "team_id": 514,
+                "team_name": "Salernitana",
+                "logo": "https://media-1.api-sports.io/football/teams/514.png"
+              },
+              "awayTeam": {
+                "team_id": 3575,
+                "team_name": "Hatayspor",
+                "logo": "https://media-1.api-sports.io/football/teams/3575.png"
+              },
+              "event_date": "2023-08-01T16:00:00.000Z",
+              "venue": "Stadio Comunale Domenico Francioni",
+              "day saison": "Club Friendlies 2",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 6,
+              "score": {
+                "halftime": "1-2",
+                "fulltime": "1-6",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1037333,
+              "homeTeam": {
+                "team_id": 416,
+                "team_name": "FC Volendam",
+                "logo": "https://media-2.api-sports.io/football/teams/416.png"
+              },
+              "awayTeam": {
+                "team_id": 996,
+                "team_name": "Alanyaspor",
+                "logo": "https://media-1.api-sports.io/football/teams/996.png"
+              },
+              "event_date": "2023-08-01T16:30:00.000Z",
+              "venue": "Sportpark Overdie",
+              "day saison": "Club Friendlies 2",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1053035,
+              "homeTeam": {
+                "team_id": 423,
+                "team_name": "FC OSS",
+                "logo": "https://media-1.api-sports.io/football/teams/423.png"
+              },
+              "awayTeam": {
+                "team_id": 10155,
+                "team_name": "Al Nasr",
+                "logo": "https://media-2.api-sports.io/football/teams/10155.png"
+              },
+              "event_date": "2023-08-01T16:30:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1072526,
+              "homeTeam": {
+                "team_id": 200,
+                "team_name": "Vitesse",
+                "logo": "https://media-3.api-sports.io/football/teams/200.png"
+              },
+              "awayTeam": {
+                "team_id": 6222,
+                "team_name": "Patro Eisden",
+                "logo": "https://media-3.api-sports.io/football/teams/6222.png"
+              },
+              "event_date": "2023-08-01T16:30:00.000Z",
+              "venue": "RKSV Driel Stadion",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1086798,
+              "homeTeam": {
+                "team_id": 223,
+                "team_name": "Chaves",
+                "logo": "https://media-3.api-sports.io/football/teams/223.png"
+              },
+              "awayTeam": {
+                "team_id": 213,
+                "team_name": "Feirense",
+                "logo": "https://media-3.api-sports.io/football/teams/213.png"
+              },
+              "event_date": "2023-08-01T17:00:00.000Z",
+              "venue": "Estádio Municipal Eng. Manuel Branco Teixeira",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 4,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "2-2",
+                "fulltime": "4-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097214,
+              "homeTeam": {
+                "team_id": 5931,
+                "team_name": "Sporting Hasselt",
+                "logo": "https://media-2.api-sports.io/football/teams/5931.png"
+              },
+              "awayTeam": {
+                "team_id": 19045,
+                "team_name": "KRC Genk II",
+                "logo": "https://media-3.api-sports.io/football/teams/19045.png"
+              },
+              "event_date": "2023-08-01T17:30:00.000Z",
+              "venue": "TBC",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097215,
+              "homeTeam": {
+                "team_id": 1277,
+                "team_name": "De Treffers",
+                "logo": "https://media-3.api-sports.io/football/teams/1277.png"
+              },
+              "awayTeam": {
+                "team_id": 517,
+                "team_name": "Venezia",
+                "logo": "https://media-1.api-sports.io/football/teams/517.png"
+              },
+              "event_date": "2023-08-01T17:30:00.000Z",
+              "venue": "Sportpark Zuid veld 1",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "1-2",
+                "fulltime": "2-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036365,
+              "homeTeam": {
+                "team_id": 427,
+                "team_name": "Telstar",
+                "logo": "https://media-1.api-sports.io/football/teams/427.png"
+              },
+              "awayTeam": {
+                "team_id": 1272,
+                "team_name": "Quick Boys",
+                "logo": "https://media-1.api-sports.io/football/teams/1272.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "BUKO Stadion",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1086799,
+              "homeTeam": {
+                "team_id": 5982,
+                "team_name": "Wallonne Ciney",
+                "logo": "https://media-3.api-sports.io/football/teams/5982.png"
+              },
+              "awayTeam": {
+                "team_id": 6220,
+                "team_name": "Liège",
+                "logo": "https://media-2.api-sports.io/football/teams/6220.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "Ciney Terrain 4",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030644,
+              "homeTeam": {
+                "team_id": 247,
+                "team_name": "Celtic",
+                "logo": "https://media-2.api-sports.io/football/teams/247.png"
+              },
+              "awayTeam": {
+                "team_id": 531,
+                "team_name": "Athletic Club",
+                "logo": "https://media-1.api-sports.io/football/teams/531.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "Celtic Park",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-2",
+                "fulltime": "3-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030645,
+              "homeTeam": {
+                "team_id": 1366,
+                "team_name": "Hartlepool",
+                "logo": "https://media-1.api-sports.io/football/teams/1366.png"
+              },
+              "awayTeam": {
+                "team_id": 746,
+                "team_name": "Sunderland",
+                "logo": "https://media-2.api-sports.io/football/teams/746.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "The Suit Direct Stadium",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 5,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "3-1",
+                "fulltime": "5-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097399,
+              "homeTeam": {
+                "team_id": 7654,
+                "team_name": "Maldon & Tiptree",
+                "logo": "https://media-2.api-sports.io/football/teams/7654.png"
+              },
+              "awayTeam": {
+                "team_id": 4678,
+                "team_name": "Billericay Town",
+                "logo": "https://media-1.api-sports.io/football/teams/4678.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 5,
+              "score": {
+                "halftime": "1-2",
+                "fulltime": "1-5",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097400,
+              "homeTeam": {
+                "team_id": 7753,
+                "team_name": "Tiverton Town",
+                "logo": "https://media-1.api-sports.io/football/teams/7753.png"
+              },
+              "awayTeam": {
+                "team_id": 76,
+                "team_name": "Swansea",
+                "logo": "https://media-3.api-sports.io/football/teams/76.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "3-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097401,
+              "homeTeam": {
+                "team_id": 7266,
+                "team_name": "Worksop Town",
+                "logo": "https://media-3.api-sports.io/football/teams/7266.png"
+              },
+              "awayTeam": {
+                "team_id": 7667,
+                "team_name": "Sheffield",
+                "logo": "https://media-1.api-sports.io/football/teams/7667.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097411,
+              "homeTeam": {
+                "team_id": 7252,
+                "team_name": "Stocksbridge Park Steels",
+                "logo": "https://media-3.api-sports.io/football/teams/7252.png"
+              },
+              "awayTeam": {
+                "team_id": 7754,
+                "team_name": "United of Manchester",
+                "logo": "https://media-3.api-sports.io/football/teams/7754.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "2-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030646,
+              "homeTeam": {
+                "team_id": 7701,
+                "team_name": "Bishop's Stortford",
+                "logo": "https://media-3.api-sports.io/football/teams/7701.png"
+              },
+              "awayTeam": {
+                "team_id": 1373,
+                "team_name": "Leyton Orient",
+                "logo": "https://media-1.api-sports.io/football/teams/1373.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "The Research and Development Advisors UK Stadium",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030647,
+              "homeTeam": {
+                "team_id": 7740,
+                "team_name": "Radcliffe",
+                "logo": "https://media-1.api-sports.io/football/teams/7740.png"
+              },
+              "awayTeam": {
+                "team_id": 1841,
+                "team_name": "FC Halifax Town",
+                "logo": "https://media-3.api-sports.io/football/teams/1841.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Neuven Stadium",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030648,
+              "homeTeam": {
+                "team_id": 7243,
+                "team_name": "Northwood",
+                "logo": "https://media-3.api-sports.io/football/teams/7243.png"
+              },
+              "awayTeam": {
+                "team_id": 1821,
+                "team_name": "Dagenham & Redbridge",
+                "logo": "https://media-1.api-sports.io/football/teams/1821.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Fenton Civil Engineering Stadium",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "3-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030649,
+              "homeTeam": {
+                "team_id": 7731,
+                "team_name": "Matlock Town",
+                "logo": "https://media-2.api-sports.io/football/teams/7731.png"
+              },
+              "awayTeam": {
+                "team_id": 1374,
+                "team_name": "Mansfield Town",
+                "logo": "https://media-3.api-sports.io/football/teams/1374.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "The Proctor Cars Stadium",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "2-2",
+                "fulltime": "2-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1051878,
+              "homeTeam": {
+                "team_id": 9499,
+                "team_name": "Grosseto",
+                "logo": "https://media-1.api-sports.io/football/teams/9499.png"
+              },
+              "awayTeam": {
+                "team_id": 502,
+                "team_name": "Fiorentina",
+                "logo": "https://media-2.api-sports.io/football/teams/502.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Stadio Olimpico Carlo Zecchini",
+              "day saison": "Club Friendlies 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "0-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097216,
+              "homeTeam": {
+                "team_id": 7698,
+                "team_name": "Basford United",
+                "logo": "https://media-2.api-sports.io/football/teams/7698.png"
+              },
+              "awayTeam": {
+                "team_id": 1345,
+                "team_name": "Chesterfield",
+                "logo": "https://media-3.api-sports.io/football/teams/1345.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Greenwich Avenue",
+              "day saison": "Club Friendlies 3",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097398,
+              "homeTeam": {
+                "team_id": 7206,
+                "team_name": "Ashford United",
+                "logo": "https://media-3.api-sports.io/football/teams/7206.png"
+              },
+              "awayTeam": {
+                "team_id": 7764,
+                "team_name": "Bowers & Pitsea",
+                "logo": "https://media-3.api-sports.io/football/teams/7764.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097402,
+              "homeTeam": {
+                "team_id": 8692,
+                "team_name": "Badshot Lea",
+                "logo": "https://media-1.api-sports.io/football/teams/8692.png"
+              },
+              "awayTeam": {
+                "team_id": 8831,
+                "team_name": "Horndean",
+                "logo": "https://media-1.api-sports.io/football/teams/8831.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097403,
+              "homeTeam": {
+                "team_id": 8712,
+                "team_name": "Bootle",
+                "logo": "https://media-3.api-sports.io/football/teams/8712.png"
+              },
+              "awayTeam": {
+                "team_id": 7756,
+                "team_name": "Warrington Town",
+                "logo": "https://media-3.api-sports.io/football/teams/7756.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097404,
+              "homeTeam": {
+                "team_id": 1832,
+                "team_name": "Bromley",
+                "logo": "https://media-3.api-sports.io/football/teams/1832.png"
+              },
+              "awayTeam": {
+                "team_id": 17000,
+                "team_name": "Crystal Palace U21",
+                "logo": "https://media-1.api-sports.io/football/teams/17000.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "0-3",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097405,
+              "homeTeam": {
+                "team_id": 7623,
+                "team_name": "Canvey Island",
+                "logo": "https://media-2.api-sports.io/football/teams/7623.png"
+              },
+              "awayTeam": {
+                "team_id": 7228,
+                "team_name": "Grays Athletic",
+                "logo": "https://media-3.api-sports.io/football/teams/7228.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 4",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097406,
+              "homeTeam": {
+                "team_id": 8658,
+                "team_name": "Concord Rangers",
+                "logo": "https://media-3.api-sports.io/football/teams/8658.png"
+              },
+              "awayTeam": {
+                "team_id": 7216,
+                "team_name": "Brentwood Town",
+                "logo": "https://media-1.api-sports.io/football/teams/7216.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097407,
+              "homeTeam": {
+                "team_id": 12059,
+                "team_name": "Croydon Athletic",
+                "logo": "https://media-2.api-sports.io/football/teams/12059.png"
+              },
+              "awayTeam": {
+                "team_id": 8702,
+                "team_name": "Beckenham Town",
+                "logo": "https://media-2.api-sports.io/football/teams/8702.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": null,
+                "fulltime": "3-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097408,
+              "homeTeam": {
+                "team_id": 7723,
+                "team_name": "Horsham",
+                "logo": "https://media-2.api-sports.io/football/teams/7723.png"
+              },
+              "awayTeam": {
+                "team_id": 8842,
+                "team_name": "Lancing",
+                "logo": "https://media-3.api-sports.io/football/teams/8842.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "1-3",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097409,
+              "homeTeam": {
+                "team_id": 7245,
+                "team_name": "Phoenix Sports",
+                "logo": "https://media-3.api-sports.io/football/teams/7245.png"
+              },
+              "awayTeam": {
+                "team_id": 7711,
+                "team_name": "Cray Wanderers",
+                "logo": "https://media-2.api-sports.io/football/teams/7711.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1097410,
+              "homeTeam": {
+                "team_id": 7749,
+                "team_name": "Stalybridge Celtic",
+                "logo": "https://media-2.api-sports.io/football/teams/7749.png"
+              },
+              "awayTeam": {
+                "team_id": 4679,
+                "team_name": "Chorley",
+                "logo": "https://media-2.api-sports.io/football/teams/4679.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": null,
+              "day saison": "Club Friendlies 5",
+              "status": "Match Cancelled",
+              "statusShort": "CANC",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media-2.api-sports.io/football/leagues/848.png",
+          "leagueid": 5277,
+          "matches": [
+            {
+              "fixture_id": 1081856,
+              "homeTeam": {
+                "team_id": 4153,
+                "team_name": "Valmiera / BSS",
+                "logo": "https://media-1.api-sports.io/football/teams/4153.png"
+              },
+              "awayTeam": {
+                "team_id": 700,
+                "team_name": "Tre Penne",
+                "logo": "https://media-2.api-sports.io/football/teams/700.png"
+              },
+              "event_date": "2023-08-01T15:00:00.000Z",
+              "venue": "Janis Dalins stadium",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 7,
+              "score": {
+                "halftime": "4-0",
+                "fulltime": "7-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1081862,
+              "homeTeam": {
+                "team_id": 4633,
+                "team_name": "Zimbru",
+                "logo": "https://media-3.api-sports.io/football/teams/4633.png"
+              },
+              "awayTeam": {
+                "team_id": 611,
+                "team_name": "Fenerbahce",
+                "logo": "https://media-2.api-sports.io/football/teams/611.png"
+              },
+              "event_date": "2023-08-01T17:30:00.000Z",
+              "venue": "Stadionul Zimbru",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-4",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1081907,
+              "homeTeam": {
+                "team_id": 696,
+                "team_name": "Balzan FC",
+                "logo": "https://media-2.api-sports.io/football/teams/696.png"
+              },
+              "awayTeam": {
+                "team_id": 387,
+                "team_name": "Neman",
+                "logo": "https://media-3.api-sports.io/football/teams/387.png"
+              },
+              "event_date": "2023-08-01T17:30:00.000Z",
+              "venue": "MFA Centenary Stadium",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1081852,
+              "homeTeam": {
+                "team_id": 11907,
+                "team_name": "Swift Hesperange",
+                "logo": "https://media-1.api-sports.io/football/teams/11907.png"
+              },
+              "awayTeam": {
+                "team_id": 354,
+                "team_name": "The New Saints",
+                "logo": "https://media-2.api-sports.io/football/teams/354.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "Stade Alphonse Theis",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "3-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074575,
+              "homeTeam": {
+                "team_id": 708,
+                "team_name": "Partizani",
+                "logo": "https://media-2.api-sports.io/football/teams/708.png"
+              },
+              "awayTeam": {
+                "team_id": 3345,
+                "team_name": "Atlètic Club d'Escaldes",
+                "logo": "https://media-1.api-sports.io/football/teams/3345.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Arena Kombetare",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 4,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "4-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074577,
+              "homeTeam": {
+                "team_id": 579,
+                "team_name": "Buducnost Podgorica",
+                "logo": "https://media-1.api-sports.io/football/teams/579.png"
+              },
+              "awayTeam": {
+                "team_id": 4346,
+                "team_name": "Struga",
+                "logo": "https://media-1.api-sports.io/football/teams/4346.png"
+              },
+              "event_date": "2023-08-01T19:00:00.000Z",
+              "venue": "Stadion Pod Goricom",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 4,
+              "score": {
+                "halftime": "2-2",
+                "fulltime": "3-4",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "UEFA Champions League",
+          "logo": "https://media-1.api-sports.io/football/leagues/2.png",
+          "leagueid": 5262,
+          "matches": [
+            {
+              "fixture_id": 1037424,
+              "homeTeam": {
+                "team_id": 617,
+                "team_name": "Panathinaikos",
+                "logo": "https://media-1.api-sports.io/football/teams/617.png"
+              },
+              "awayTeam": {
+                "team_id": 3623,
+                "team_name": "Dnipro-1",
+                "logo": "https://media-1.api-sports.io/football/teams/3623.png"
+              },
+              "event_date": "2023-08-01T17:30:00.000Z",
+              "venue": "Apostolos Nikolaidis Stadium",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "2-2",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074589,
+              "homeTeam": {
+                "team_id": 677,
+                "team_name": "Olimpija Ljubljana",
+                "logo": "https://media-1.api-sports.io/football/teams/677.png"
+              },
+              "awayTeam": {
+                "team_id": 566,
+                "team_name": "Ludogorets",
+                "logo": "https://media-2.api-sports.io/football/teams/566.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "Stadion Stožice",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "2-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074595,
+              "homeTeam": {
+                "team_id": 388,
+                "team_name": "Bate Borisov",
+                "logo": "https://media-1.api-sports.io/football/teams/388.png"
+              },
+              "awayTeam": {
+                "team_id": 3408,
+                "team_name": "Aris",
+                "logo": "https://media-2.api-sports.io/football/teams/3408.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "Városi Stadion",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 5,
+              "score": {
+                "halftime": "1-3",
+                "fulltime": "3-5",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1074585,
+              "homeTeam": {
+                "team_id": 656,
+                "team_name": "Slovan Bratislava",
+                "logo": "https://media-1.api-sports.io/football/teams/656.png"
+              },
+              "awayTeam": {
+                "team_id": 588,
+                "team_name": "Zrinjski",
+                "logo": "https://media-1.api-sports.io/football/teams/588.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "Štadión Tehelné pole",
+              "day saison": "2nd Qualifying Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-2",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "COTIF Tournament",
+          "logo": "https://media-2.api-sports.io/football/leagues/940.png",
+          "leagueid": 5572,
+          "matches": [
+            {
+              "fixture_id": 1098804,
+              "homeTeam": {
+                "team_id": 22012,
+                "team_name": "Elche U20",
+                "logo": "https://media-1.api-sports.io/football/teams/22012.png"
+              },
+              "awayTeam": {
+                "team_id": 22011,
+                "team_name": "ADH Brasil",
+                "logo": "https://media-3.api-sports.io/football/teams/22011.png"
+              },
+              "event_date": "2023-08-01T18:00:00.000Z",
+              "venue": "Estadi Municipal Els Arcs",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-1",
+                "fulltime": "2-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1098805,
+              "homeTeam": {
+                "team_id": 10301,
+                "team_name": "Saudi Arabia U20",
+                "logo": "https://media-3.api-sports.io/football/teams/10301.png"
+              },
+              "awayTeam": {
+                "team_id": 19926,
+                "team_name": "Valencia U20",
+                "logo": "https://media-3.api-sports.io/football/teams/19926.png"
+              },
+              "event_date": "2023-08-01T20:30:00.000Z",
+              "venue": "Estadi Municipal Els Arcs",
+              "day saison": "Group Stage - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media-1.api-sports.io/football/leagues/13.png",
+          "leagueid": 4947,
+          "matches": [
+            {
+              "fixture_id": 1052189,
+              "homeTeam": {
+                "team_id": 458,
+                "team_name": "Argentinos JRS",
+                "logo": "https://media-3.api-sports.io/football/teams/458.png"
+              },
+              "awayTeam": {
+                "team_id": 124,
+                "team_name": "Fluminense",
+                "logo": "https://media-3.api-sports.io/football/teams/124.png"
+              },
+              "event_date": "2023-08-01T22:00:00.000Z",
+              "venue": "Estadio Diego Armando Maradona",
+              "day saison": "Round of 16",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media-3.api-sports.io/football/leagues/11.png",
+          "leagueid": 4949,
+          "matches": [
+            {
+              "fixture_id": 1092492,
+              "homeTeam": {
+                "team_id": 1179,
+                "team_name": "Libertad Asuncion",
+                "logo": "https://media-3.api-sports.io/football/teams/1179.png"
+              },
+              "awayTeam": {
+                "team_id": 154,
+                "team_name": "Fortaleza EC",
+                "logo": "https://media-2.api-sports.io/football/teams/154.png"
+              },
+              "event_date": "2023-08-01T22:00:00.000Z",
+              "venue": "Estadio Defensores del Chaco",
+              "day saison": "Round of 16",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Concacaf Central American Cup",
+          "logo": "https://media-1.api-sports.io/football/leagues/1028.png",
+          "leagueid": 5599,
+          "matches": [
+            {
+              "fixture_id": 1102573,
+              "homeTeam": {
+                "team_id": 4645,
+                "team_name": "Real Estelí",
+                "logo": "https://media-3.api-sports.io/football/teams/4645.png"
+              },
+              "awayTeam": {
+                "team_id": 3667,
+                "team_name": "Xelajú",
+                "logo": "https://media-3.api-sports.io/football/teams/3667.png"
+              },
+              "event_date": "2023-08-01T22:00:00.000Z",
+              "venue": "Estadio Independencia",
+              "day saison": "Group Stage - 1",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brazil",
+      "flag": "https://media-3.api-sports.io/flags/br.svg",
+      "championship": [
+        {
+          "name": "Serie D",
+          "logo": "https://media-2.api-sports.io/football/leagues/76.png",
+          "leagueid": 5103,
+          "matches": [
+            {
+              "fixture_id": 1094367,
+              "homeTeam": {
+                "team_id": 7862,
+                "team_name": "Princesa Solimões",
+                "logo": "https://media-2.api-sports.io/football/teams/7862.png"
+              },
+              "awayTeam": {
+                "team_id": 1195,
+                "team_name": "Ferroviario",
+                "logo": "https://media-2.api-sports.io/football/teams/1195.png"
+              },
+              "event_date": "2023-08-01T00:00:00.000Z",
+              "venue": "Estádio Olímpico Municipal Gilberto Mestrinho",
+              "day saison": "Round of 32",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Serie B",
+          "logo": "https://media-2.api-sports.io/football/leagues/72.png",
+          "leagueid": 5082,
+          "matches": [
+            {
+              "fixture_id": 1006651,
+              "homeTeam": {
+                "team_id": 7848,
+                "team_name": "Mirassol",
+                "logo": "https://media-3.api-sports.io/football/teams/7848.png"
+              },
+              "awayTeam": {
+                "team_id": 145,
+                "team_name": "Avai",
+                "logo": "https://media-3.api-sports.io/football/teams/145.png"
+              },
+              "event_date": "2023-08-01T22:00:00.000Z",
+              "venue": "Estádio José Maria de Campos Maia",
+              "day saison": "Regular Season - 21",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1006653,
+              "homeTeam": {
+                "team_id": 155,
+                "team_name": "Sampaio Correa",
+                "logo": "https://media-3.api-sports.io/football/teams/155.png"
+              },
+              "awayTeam": {
+                "team_id": 2618,
+                "team_name": "Botafogo SP",
+                "logo": "https://media-2.api-sports.io/football/teams/2618.png"
+              },
+              "event_date": "2023-08-01T22:00:00.000Z",
+              "venue": "Estádio Governador João Castelo",
+              "day saison": "Regular Season - 21",
+              "status": "Second Half",
+              "statusShort": "2H",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Mineiro - 2",
+          "logo": "https://media-3.api-sports.io/football/leagues/619.png",
+          "leagueid": 5126,
+          "matches": [
+            {
+              "fixture_id": 1036926,
+              "homeTeam": {
+                "team_id": 13086,
+                "team_name": "Betim",
+                "logo": "https://media-3.api-sports.io/football/teams/13086.png"
+              },
+              "awayTeam": {
+                "team_id": 2228,
+                "team_name": "Uniao Trabalhadores",
+                "logo": "https://media-3.api-sports.io/football/teams/2228.png"
+              },
+              "event_date": "2023-08-01T22:30:00.000Z",
+              "venue": "Arena Vera Cruz",
+              "day saison": "Hexagonal Final - 8",
+              "status": "First Half",
+              "statusShort": "1H",
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Argentina",
+      "flag": "https://media-1.api-sports.io/flags/ar.svg",
+      "championship": [
+        {
+          "name": "Primera Nacional",
+          "logo": "https://media-2.api-sports.io/football/leagues/129.png",
+          "leagueid": 4972,
+          "matches": [
+            {
+              "fixture_id": 1027802,
+              "homeTeam": {
+                "team_id": 464,
+                "team_name": "All Boys",
+                "logo": "https://media-1.api-sports.io/football/teams/464.png"
+              },
+              "awayTeam": {
+                "team_id": 1945,
+                "team_name": "Defensores Unidos",
+                "logo": "https://media-2.api-sports.io/football/teams/1945.png"
+              },
+              "event_date": "2023-08-01T00:20:00.000Z",
+              "venue": "Estadio Islas Malvinas",
+              "day saison": "Group A - 27",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chile",
+      "flag": "https://media-1.api-sports.io/flags/cl.svg",
+      "championship": [
+        {
+          "name": "Primera B",
+          "logo": "https://media-3.api-sports.io/football/leagues/266.png",
+          "leagueid": 4993,
+          "matches": [
+            {
+              "fixture_id": 987899,
+              "homeTeam": {
+                "team_id": 2341,
+                "team_name": "D. La Serena",
+                "logo": "https://media-2.api-sports.io/football/teams/2341.png"
+              },
+              "awayTeam": {
+                "team_id": 2317,
+                "team_name": "Deportes Temuco",
+                "logo": "https://media-2.api-sports.io/football/teams/2317.png"
+              },
+              "event_date": "2023-08-01T00:30:00.000Z",
+              "venue": "Estadio La Portada de La Serena",
+              "day saison": "Regular Season - 20",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "1-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mexico",
+      "flag": "https://media-1.api-sports.io/flags/mx.svg",
+      "championship": [
+        {
+          "name": "Liga de Expansión MX",
+          "logo": "https://media-2.api-sports.io/football/leagues/263.png",
+          "leagueid": 5373,
+          "matches": [
+            {
+              "fixture_id": 1053156,
+              "homeTeam": {
+                "team_id": 2300,
+                "team_name": "Alebrijes de Oaxaca",
+                "logo": "https://media-2.api-sports.io/football/teams/2300.png"
+              },
+              "awayTeam": {
+                "team_id": 14278,
+                "team_name": "Tapatío",
+                "logo": "https://media-1.api-sports.io/football/teams/14278.png"
+              },
+              "event_date": "2023-08-01T01:05:00.000Z",
+              "venue": "Estadio Tecnológico de Oaxaca",
+              "day saison": "Apertura - 2",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Liga MX Femenil",
+          "logo": "https://media-1.api-sports.io/football/leagues/673.png",
+          "leagueid": 5301,
+          "matches": [
+            {
+              "fixture_id": 1041184,
+              "homeTeam": {
+                "team_id": 14877,
+                "team_name": "León W",
+                "logo": "https://media-1.api-sports.io/football/teams/14877.png"
+              },
+              "awayTeam": {
+                "team_id": 14871,
+                "team_name": "Querétaro W",
+                "logo": "https://media-2.api-sports.io/football/teams/14871.png"
+              },
+              "event_date": "2023-08-01T01:06:00.000Z",
+              "venue": "Estadio León",
+              "day saison": "Apertura - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Colombia",
+      "flag": "https://media-2.api-sports.io/flags/co.svg",
+      "championship": [
+        {
+          "name": "Primera A",
+          "logo": "https://media-2.api-sports.io/football/leagues/239.png",
+          "leagueid": 4992,
+          "matches": [
+            {
+              "fixture_id": 990332,
+              "homeTeam": {
+                "team_id": 1135,
+                "team_name": "Junior",
+                "logo": "https://media-2.api-sports.io/football/teams/1135.png"
+              },
+              "awayTeam": {
+                "team_id": 1131,
+                "team_name": "Bucaramanga",
+                "logo": "https://media-3.api-sports.io/football/teams/1131.png"
+              },
+              "event_date": "2023-08-01T01:20:00.000Z",
+              "venue": "Estadio Metropolitano Roberto Meléndez",
+              "day saison": "Clausura - 3",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Peru",
+      "flag": "https://media-2.api-sports.io/flags/pe.svg",
+      "championship": [
+        {
+          "name": "Primera División",
+          "logo": "https://media-1.api-sports.io/football/leagues/281.png",
+          "leagueid": 4978,
+          "matches": [
+            {
+              "fixture_id": 1061080,
+              "homeTeam": {
+                "team_id": 2540,
+                "team_name": "Universitario",
+                "logo": "https://media-3.api-sports.io/football/teams/2540.png"
+              },
+              "awayTeam": {
+                "team_id": 2551,
+                "team_name": "Carlos A. Mannucci",
+                "logo": "https://media-2.api-sports.io/football/teams/2551.png"
+              },
+              "event_date": "2023-08-01T01:30:00.000Z",
+              "venue": "Estadio Monumental",
+              "day saison": "Clausura - 6",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "3-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1061086,
+              "homeTeam": {
+                "team_id": 2545,
+                "team_name": "Deportivo Municipal",
+                "logo": "https://media-2.api-sports.io/football/teams/2545.png"
+              },
+              "awayTeam": {
+                "team_id": 10492,
+                "team_name": "ADT",
+                "logo": "https://media-1.api-sports.io/football/teams/10492.png"
+              },
+              "event_date": "2023-08-01T20:00:00.000Z",
+              "venue": "Estadio Ivan Elias Moreno",
+              "day saison": "Clausura - 6",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "1-2",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Myanmar",
+      "flag": "https://media-3.api-sports.io/flags/mm.svg",
+      "championship": [
+        {
+          "name": "National League",
+          "logo": "https://media-2.api-sports.io/football/leagues/588.png",
+          "leagueid": 5061,
+          "matches": [
+            {
+              "fixture_id": 1003710,
+              "homeTeam": {
+                "team_id": 12525,
+                "team_name": "Hantharwady United",
+                "logo": "https://media-1.api-sports.io/football/teams/12525.png"
+              },
+              "awayTeam": {
+                "team_id": 20967,
+                "team_name": "Kachin United",
+                "logo": "https://media-1.api-sports.io/football/teams/20967.png"
+              },
+              "event_date": "2023-08-01T09:30:00.000Z",
+              "venue": "Thuwunna Stadium",
+              "day saison": "Regular Season - 14",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armenia",
+      "flag": "https://media-2.api-sports.io/flags/am.svg",
+      "championship": [
+        {
+          "name": "First League",
+          "logo": "https://media-2.api-sports.io/football/leagues/343.png",
+          "leagueid": 5504,
+          "matches": [
+            {
+              "fixture_id": 1082874,
+              "homeTeam": {
+                "team_id": 688,
+                "team_name": "Gandzasar",
+                "logo": "https://media-3.api-sports.io/football/teams/688.png"
+              },
+              "awayTeam": {
+                "team_id": 21880,
+                "team_name": "Onor",
+                "logo": "https://media-3.api-sports.io/football/teams/21880.png"
+              },
+              "event_date": "2023-08-01T12:00:00.000Z",
+              "venue": "Gandzasar Stadium",
+              "day saison": "Regular Season - 1",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082868,
+              "homeTeam": {
+                "team_id": 3687,
+                "team_name": "Alashkert II",
+                "logo": "https://media-2.api-sports.io/football/teams/3687.png"
+              },
+              "awayTeam": {
+                "team_id": 21877,
+                "team_name": "Andranik",
+                "logo": "https://media-2.api-sports.io/football/teams/21877.png"
+              },
+              "event_date": "2023-08-01T13:30:00.000Z",
+              "venue": "Kasakhi Marzik Stadium",
+              "day saison": "Regular Season - 1",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082869,
+              "homeTeam": {
+                "team_id": 3689,
+                "team_name": "Ararat-Armenia II",
+                "logo": "https://media-2.api-sports.io/football/teams/3689.png"
+              },
+              "awayTeam": {
+                "team_id": 3697,
+                "team_name": "Shirak II",
+                "logo": "https://media-3.api-sports.io/football/teams/3697.png"
+              },
+              "event_date": "2023-08-01T13:30:00.000Z",
+              "venue": "Yerevan Football Academy",
+              "day saison": "Regular Season - 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": null,
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082870,
+              "homeTeam": {
+                "team_id": 3688,
+                "team_name": "Ararat II",
+                "logo": "https://media-2.api-sports.io/football/teams/3688.png"
+              },
+              "awayTeam": {
+                "team_id": 21878,
+                "team_name": "Nikarm",
+                "logo": "https://media-1.api-sports.io/football/teams/21878.png"
+              },
+              "event_date": "2023-08-01T13:30:00.000Z",
+              "venue": "Sports Complex Dzoraghbyur",
+              "day saison": "Regular Season - 1",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082871,
+              "homeTeam": {
+                "team_id": 21879,
+                "team_name": "Noah II",
+                "logo": "https://media-1.api-sports.io/football/teams/21879.png"
+              },
+              "awayTeam": {
+                "team_id": 6281,
+                "team_name": "Lernayin Artsakh",
+                "logo": "https://media-1.api-sports.io/football/teams/6281.png"
+              },
+              "event_date": "2023-08-01T13:30:00.000Z",
+              "venue": "Fut Akademia",
+              "day saison": "Regular Season - 1",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082873,
+              "homeTeam": {
+                "team_id": 3696,
+                "team_name": "Pyunik II",
+                "logo": "https://media-3.api-sports.io/football/teams/3696.png"
+              },
+              "awayTeam": {
+                "team_id": 17171,
+                "team_name": "BKMA II",
+                "logo": "https://media-3.api-sports.io/football/teams/17171.png"
+              },
+              "event_date": "2023-08-01T13:30:00.000Z",
+              "venue": "Pyunik Training Centre",
+              "day saison": "Regular Season - 1",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1082872,
+              "homeTeam": {
+                "team_id": 3690,
+                "team_name": "Banants II",
+                "logo": "https://media-1.api-sports.io/football/teams/3690.png"
+              },
+              "awayTeam": {
+                "team_id": 11174,
+                "team_name": "Mika",
+                "logo": "https://media-2.api-sports.io/football/teams/11174.png"
+              },
+              "event_date": "2023-08-01T15:00:00.000Z",
+              "venue": "Banants-3",
+              "day saison": "Regular Season - 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-1",
+                "fulltime": "3-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vietnam",
+      "flag": "https://media-1.api-sports.io/flags/vn.svg",
+      "championship": [
+        {
+          "name": "V.League 1",
+          "logo": "https://media-1.api-sports.io/football/leagues/340.png",
+          "leagueid": 4976,
+          "matches": [
+            {
+              "fixture_id": 1048024,
+              "homeTeam": {
+                "team_id": 3681,
+                "team_name": "Viettel",
+                "logo": "https://media-1.api-sports.io/football/teams/3681.png"
+              },
+              "awayTeam": {
+                "team_id": 9160,
+                "team_name": "Binh Dinh",
+                "logo": "https://media-3.api-sports.io/football/teams/9160.png"
+              },
+              "event_date": "2023-08-01T12:15:00.000Z",
+              "venue": "Sân vận động Hàng Đẫy",
+              "day saison": "Championship Round - 4",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kyrgyzstan",
+      "flag": "https://media-3.api-sports.io/flags/kg.svg",
+      "championship": [
+        {
+          "name": "Premier League",
+          "logo": "https://media-3.api-sports.io/football/leagues/569.png",
+          "leagueid": 5128,
+          "matches": [
+            {
+              "fixture_id": 1023363,
+              "homeTeam": {
+                "team_id": 8026,
+                "team_name": "Dordoi Bishkek",
+                "logo": "https://media-1.api-sports.io/football/teams/8026.png"
+              },
+              "awayTeam": {
+                "team_id": 12240,
+                "team_name": "Neftchi",
+                "logo": "https://media-2.api-sports.io/football/teams/12240.png"
+              },
+              "event_date": "2023-08-01T12:30:00.000Z",
+              "venue": "Stadion Dordoy",
+              "day saison": "Regular Season - 12",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "3-0",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uzbekistan",
+      "flag": "https://media-2.api-sports.io/flags/uz.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-3.api-sports.io/football/leagues/802.png",
+          "leagueid": 5123,
+          "matches": [
+            {
+              "fixture_id": 1030784,
+              "homeTeam": {
+                "team_id": 20721,
+                "team_name": "Turan",
+                "logo": "https://media-1.api-sports.io/football/teams/20721.png"
+              },
+              "awayTeam": {
+                "team_id": 18790,
+                "team_name": "Paxtakor-79",
+                "logo": "https://media-2.api-sports.io/football/teams/18790.png"
+              },
+              "event_date": "2023-08-01T15:00:00.000Z",
+              "venue": null,
+              "day saison": "Round of 16",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030785,
+              "homeTeam": {
+                "team_id": 4215,
+                "team_name": "Nasaf",
+                "logo": "https://media-2.api-sports.io/football/teams/4215.png"
+              },
+              "awayTeam": {
+                "team_id": 4211,
+                "team_name": "Buxoro",
+                "logo": "https://media-1.api-sports.io/football/teams/4211.png"
+              },
+              "event_date": "2023-08-01T15:00:00.000Z",
+              "venue": null,
+              "day saison": "Round of 16",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 4,
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "4-3",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1030790,
+              "homeTeam": {
+                "team_id": 4224,
+                "team_name": "Dinamo Samarqand",
+                "logo": "https://media-1.api-sports.io/football/teams/4224.png"
+              },
+              "awayTeam": {
+                "team_id": 4220,
+                "team_name": "Pakhtakor",
+                "logo": "https://media-1.api-sports.io/football/teams/4220.png"
+              },
+              "event_date": "2023-08-01T15:00:00.000Z",
+              "venue": null,
+              "day saison": "Round of 16",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "3-0",
+                "fulltime": "3-2",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Finland",
+      "flag": "https://media-3.api-sports.io/flags/fi.svg",
+      "championship": [
+        {
+          "name": "Kansallinen Liiga",
+          "logo": "https://media-1.api-sports.io/football/leagues/640.png",
+          "leagueid": 5039,
+          "matches": [
+            {
+              "fixture_id": 998925,
+              "homeTeam": {
+                "team_id": 13993,
+                "team_name": "PK-35 Helsinki",
+                "logo": "https://media-3.api-sports.io/football/teams/13993.png"
+              },
+              "awayTeam": {
+                "team_id": 13997,
+                "team_name": "KuPS W",
+                "logo": "https://media-1.api-sports.io/football/teams/13997.png"
+              },
+              "event_date": "2023-08-01T15:30:00.000Z",
+              "venue": "Algeco Areena TN",
+              "day saison": "Regular Season - 14",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 998926,
+              "homeTeam": {
+                "team_id": 13996,
+                "team_name": "Honka W",
+                "logo": "https://media-1.api-sports.io/football/teams/13996.png"
+              },
+              "awayTeam": {
+                "team_id": 18756,
+                "team_name": "ONS",
+                "logo": "https://media-2.api-sports.io/football/teams/18756.png"
+              },
+              "event_date": "2023-08-01T15:30:00.000Z",
+              "venue": "Tapiolan Urheilupuisto",
+              "day saison": "Regular Season - 14",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 998927,
+              "homeTeam": {
+                "team_id": 13995,
+                "team_name": "Åland United",
+                "logo": "https://media-2.api-sports.io/football/teams/13995.png"
+              },
+              "awayTeam": {
+                "team_id": 13991,
+                "team_name": "Ilves",
+                "logo": "https://media-1.api-sports.io/football/teams/13991.png"
+              },
+              "event_date": "2023-08-01T15:30:00.000Z",
+              "venue": "Wiklöf Holding Arena",
+              "day saison": "Regular Season - 14",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1019842,
+              "homeTeam": {
+                "team_id": 13994,
+                "team_name": "TPS",
+                "logo": "https://media-1.api-sports.io/football/teams/13994.png"
+              },
+              "awayTeam": {
+                "team_id": 10920,
+                "team_name": "PK-35 Vantaa W",
+                "logo": "https://media-3.api-sports.io/football/teams/10920.png"
+              },
+              "event_date": "2023-08-01T16:00:00.000Z",
+              "venue": "Urheilupuiston Yläkenttä",
+              "day saison": "Regular Season - 14",
+              "status": "Not Started",
+              "statusShort": "NS",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slovakia",
+      "flag": "https://media-1.api-sports.io/flags/sk.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-2.api-sports.io/football/leagues/680.png",
+          "leagueid": 5439,
+          "matches": [
+            {
+              "fixture_id": 1087006,
+              "homeTeam": {
+                "team_id": 14040,
+                "team_name": "Dunajská Lužná",
+                "logo": "https://media-3.api-sports.io/football/teams/14040.png"
+              },
+              "awayTeam": {
+                "team_id": 3551,
+                "team_name": "Sereď",
+                "logo": "https://media-2.api-sports.io/football/teams/3551.png"
+              },
+              "event_date": "2023-08-01T15:30:00.000Z",
+              "venue": "Športový areál OFK",
+              "day saison": "1st Round",
+              "status": "Match Postponed",
+              "statusShort": "PST",
+              "score": {
+                "halftime": null,
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Estonia",
+      "flag": "https://media-1.api-sports.io/flags/ee.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-3.api-sports.io/football/leagues/657.png",
+          "leagueid": 5226,
+          "matches": [
+            {
+              "fixture_id": 1030925,
+              "homeTeam": {
+                "team_id": 3525,
+                "team_name": "Vaprus",
+                "logo": "https://media-3.api-sports.io/football/teams/3525.png"
+              },
+              "awayTeam": {
+                "team_id": 3519,
+                "team_name": "K-Järve JK Järve",
+                "logo": "https://media-1.api-sports.io/football/teams/3519.png"
+              },
+              "event_date": "2023-08-01T16:00:00.000Z",
+              "venue": "Pärnu Rannastaadion",
+              "day saison": "Round of 64",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 6,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "4-0",
+                "fulltime": "6-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1036563,
+              "homeTeam": {
+                "team_id": 14337,
+                "team_name": "TransferWise",
+                "logo": "https://media-1.api-sports.io/football/teams/14337.png"
+              },
+              "awayTeam": {
+                "team_id": 3531,
+                "team_name": "Tulevik",
+                "logo": "https://media-3.api-sports.io/football/teams/3531.png"
+              },
+              "event_date": "2023-08-01T16:00:00.000Z",
+              "venue": "Sportland Arena",
+              "day saison": "Round of 64",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "0-3",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Russia",
+      "flag": "https://media-3.api-sports.io/flags/ru.svg",
+      "championship": [
+        {
+          "name": "Cup",
+          "logo": "https://media-2.api-sports.io/football/leagues/237.png",
+          "leagueid": 5406,
+          "matches": [
+            {
+              "fixture_id": 1081930,
+              "homeTeam": {
+                "team_id": 19939,
+                "team_name": "Amkal",
+                "logo": "https://media-1.api-sports.io/football/teams/19939.png"
+              },
+              "awayTeam": {
+                "team_id": 14121,
+                "team_name": "Znamya Noginsk",
+                "logo": "https://media-1.api-sports.io/football/teams/14121.png"
+              },
+              "event_date": "2023-08-01T16:30:00.000Z",
+              "venue": "Futbol'noe pole 4 Akademiya Spartak im. F. Cherenkova",
+              "day saison": "Regions Path - 1st Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "1-1",
+                "fulltime": "3-2",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "flag": "https://media-2.api-sports.io/flags/il.svg",
+      "championship": [
+        {
+          "name": "Toto Cup Ligat Al",
+          "logo": "https://media-2.api-sports.io/football/leagues/385.png",
+          "leagueid": 5280,
+          "matches": [
+            {
+              "fixture_id": 1037318,
+              "homeTeam": {
+                "team_id": 4507,
+                "team_name": "Ashdod",
+                "logo": "https://media-3.api-sports.io/football/teams/4507.png"
+              },
+              "awayTeam": {
+                "team_id": 4495,
+                "team_name": "Maccabi Petah Tikva",
+                "logo": "https://media-2.api-sports.io/football/teams/4495.png"
+              },
+              "event_date": "2023-08-01T16:45:00.000Z",
+              "venue": "Yud-Alef Stadium",
+              "day saison": "Group Stage - 2",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1037317,
+              "homeTeam": {
+                "team_id": 4488,
+                "team_name": "Hapoel Petah Tikva",
+                "logo": "https://media-2.api-sports.io/football/teams/4488.png"
+              },
+              "awayTeam": {
+                "team_id": 4486,
+                "team_name": "Hapoel Katamon",
+                "logo": "https://media-1.api-sports.io/football/teams/4486.png"
+              },
+              "event_date": "2023-08-01T17:00:00.000Z",
+              "venue": "HaMoshava Stadium",
+              "day saison": "Group Stage - 2",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 5,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "1-5",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sweden",
+      "flag": "https://media-1.api-sports.io/flags/se.svg",
+      "championship": [
+        {
+          "name": "Division 2 - Norra Svealand",
+          "logo": "https://media-1.api-sports.io/football/leagues/593.png",
+          "leagueid": 5012,
+          "matches": [
+            {
+              "fixture_id": 993237,
+              "homeTeam": {
+                "team_id": 12583,
+                "team_name": "Kvarnsveden",
+                "logo": "https://media-3.api-sports.io/football/teams/12583.png"
+              },
+              "awayTeam": {
+                "team_id": 12581,
+                "team_name": "IFK Österåker",
+                "logo": "https://media-3.api-sports.io/football/teams/12581.png"
+              },
+              "event_date": "2023-08-01T17:00:00.000Z",
+              "venue": "Ljungbergsplanen",
+              "day saison": "Norra Svealand - 14",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "1-3",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "flag": "https://media-3.api-sports.io/flags/de.svg",
+      "championship": [
+        {
+          "name": "Regionalliga - West",
+          "logo": "https://media-1.api-sports.io/football/leagues/87.png",
+          "leagueid": 5521,
+          "matches": [
+            {
+              "fixture_id": 1086614,
+              "homeTeam": {
+                "team_id": 1326,
+                "team_name": "Fortuna Koln",
+                "logo": "https://media-3.api-sports.io/football/teams/1326.png"
+              },
+              "awayTeam": {
+                "team_id": 9371,
+                "team_name": "Köln II",
+                "logo": "https://media-1.api-sports.io/football/teams/9371.png"
+              },
+              "event_date": "2023-08-01T17:00:00.000Z",
+              "venue": "Südstadion",
+              "day saison": "West - 1",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 5,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "3-0",
+                "fulltime": "5-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scotland",
+      "flag": "https://media-1.api-sports.io/flags/gb.svg",
+      "championship": [
+        {
+          "name": "Challenge Cup",
+          "logo": "https://media-2.api-sports.io/football/leagues/182.png",
+          "leagueid": 5374,
+          "matches": [
+            {
+              "fixture_id": 1053249,
+              "homeTeam": {
+                "team_id": 6767,
+                "team_name": "Elgin City",
+                "logo": "https://media-1.api-sports.io/football/teams/6767.png"
+              },
+              "awayTeam": {
+                "team_id": 6782,
+                "team_name": "St. Johnstone U21",
+                "logo": "https://media-3.api-sports.io/football/teams/6782.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "Borough Briggs",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 2,
+              "score": {
+                "halftime": "1-0",
+                "fulltime": "2-0",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1053253,
+              "homeTeam": {
+                "team_id": 1390,
+                "team_name": "Brechin",
+                "logo": "https://media-3.api-sports.io/football/teams/1390.png"
+              },
+              "awayTeam": {
+                "team_id": 6771,
+                "team_name": "Hearts U21",
+                "logo": "https://media-1.api-sports.io/football/teams/6771.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "Glebe Park",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "PEN",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "2-2",
+                "extratime": "0-0",
+                "penalty": "5-3"
+              }
+            },
+            {
+              "fixture_id": 1053255,
+              "homeTeam": {
+                "team_id": 6783,
+                "team_name": "St. Mirren U21",
+                "logo": "https://media-3.api-sports.io/football/teams/6783.png"
+              },
+              "awayTeam": {
+                "team_id": 6756,
+                "team_name": "Albion Rovers",
+                "logo": "https://media-1.api-sports.io/football/teams/6756.png"
+              },
+              "event_date": "2023-08-01T18:30:00.000Z",
+              "venue": "The SMISA Stadium",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "PEN",
+              "goalsHomeTeam": 2,
+              "goalsAwayTeam": 2,
+              "score": {
+                "halftime": "0-2",
+                "fulltime": "2-2",
+                "extratime": "0-0",
+                "penalty": "2-4"
+              }
+            },
+            {
+              "fixture_id": 1053256,
+              "homeTeam": {
+                "team_id": 15602,
+                "team_name": "Tranent Juniors",
+                "logo": "https://media-1.api-sports.io/football/teams/15602.png"
+              },
+              "awayTeam": {
+                "team_id": 6776,
+                "team_name": "Motherwell U21",
+                "logo": "https://media-2.api-sports.io/football/teams/6776.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Foresters Park",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "PEN",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": "0-0",
+                "extratime": "0-0",
+                "penalty": "3-1"
+              }
+            },
+            {
+              "fixture_id": 1053258,
+              "homeTeam": {
+                "team_id": 6781,
+                "team_name": "Spartans",
+                "logo": "https://media-3.api-sports.io/football/teams/6781.png"
+              },
+              "awayTeam": {
+                "team_id": 6779,
+                "team_name": "Rangers U21",
+                "logo": "https://media-2.api-sports.io/football/teams/6779.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "Ainslie Park Stadium",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsAwayTeam": 3,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "0-3",
+                "extratime": null,
+                "penalty": null
+              }
+            },
+            {
+              "fixture_id": 1053259,
+              "homeTeam": {
+                "team_id": 19158,
+                "team_name": "Kilmarnock II",
+                "logo": "https://media-2.api-sports.io/football/teams/19158.png"
+              },
+              "awayTeam": {
+                "team_id": 7431,
+                "team_name": "Bonnyrigg Rose Athletic",
+                "logo": "https://media-3.api-sports.io/football/teams/7431.png"
+              },
+              "event_date": "2023-08-01T18:45:00.000Z",
+              "venue": "The BBSP Stadium Rugby Park",
+              "day saison": "1st Round",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 3,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "2-0",
+                "fulltime": "3-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ecuador",
+      "flag": "https://media-1.api-sports.io/flags/ec.svg",
+      "championship": [
+        {
+          "name": "Liga Pro Serie B",
+          "logo": "https://media-1.api-sports.io/football/leagues/243.png",
+          "leagueid": 5100,
+          "matches": [
+            {
+              "fixture_id": 1011886,
+              "homeTeam": {
+                "team_id": 1980,
+                "team_name": "Manta FC",
+                "logo": "https://media-3.api-sports.io/football/teams/1980.png"
+              },
+              "awayTeam": {
+                "team_id": 1990,
+                "team_name": "America de Quito",
+                "logo": "https://media-3.api-sports.io/football/teams/1990.png"
+              },
+              "event_date": "2023-08-01T20:00:00.000Z",
+              "venue": "Estadio Jocay",
+              "day saison": "Regular Season - 23",
+              "status": "Match Finished",
+              "statusShort": "FT",
+              "goalsHomeTeam": 1,
+              "goalsAwayTeam": 1,
+              "score": {
+                "halftime": "0-1",
+                "fulltime": "1-1",
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "flag": "https://media-3.api-sports.io/flags/us.svg",
+      "championship": [
+        {
+          "name": "NISA",
+          "logo": "https://media-2.api-sports.io/football/leagues/523.png",
+          "leagueid": 5075,
+          "matches": [
+            {
+              "fixture_id": 1016124,
+              "homeTeam": {
+                "team_id": 10873,
+                "team_name": "Michigan Stars",
+                "logo": "https://media-2.api-sports.io/football/teams/10873.png"
+              },
+              "awayTeam": {
+                "team_id": 16501,
+                "team_name": "Maryland Bobcats",
+                "logo": "https://media-2.api-sports.io/football/teams/16501.png"
+              },
+              "event_date": "2023-08-01T23:00:00.000Z",
+              "venue": "Romeo High School Stadium",
+              "day saison": "Spring Season Phase 2 - 6",
+              "status": "First Half",
+              "statusShort": "1H",
+              "score": {
+                "halftime": "0-0",
+                "fulltime": null,
+                "extratime": null,
+                "penalty": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
