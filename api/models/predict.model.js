@@ -113,7 +113,7 @@ const predictSchema = mongoose.Schema({
             penalty: {
                 type: String,
                 default: null
-            }
+            } 
         }
     },
     iswin: {

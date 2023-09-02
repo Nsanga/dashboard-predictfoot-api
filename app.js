@@ -16,7 +16,7 @@ dbConnect();
 // Get daily data from api-football
 cron.scheduleTask("00 05 00 * * *", () => fixtures.getDailyFixtures(2));
 cron.scheduleTask("00 05 01 * * *", () => fixtures.correctPreviousDayEvents());
-cron.scheduleTask("00 05 02 * * *", () => fixtures.correctPreviousDayEvents());
+cron.scheduleTask("00 05 02 * * *", () => fixtures.correctPreviousDayEvents()); 
 
 // App initialization
 const app = express();
@@ -37,7 +37,7 @@ app.use((req, res, next) => {
   );
   if (req.method === "OPTIONS") {
     res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
-    return res.status(200).json({});
+    return res.status(200).json({});  
   }
   next(); 
 });
