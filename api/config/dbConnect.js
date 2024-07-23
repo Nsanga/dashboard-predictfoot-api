@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const localDB = process.env.MONGODB_URL_LOCAL;
-const liveDB = process.env.MONGODB_URL_LIVE;
+const localDB = process.env.URL_DB_LOCAL;
 
 const dbConnect = async () => {
   try {
     // Connection to mongodb
-mongoose.connect(liveDB);
+mongoose.connect(localDB);
 mongoose.Promise = global.Promise
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
@@ -13,7 +12,7 @@ db.once('open', function() {
     console.log('Connected to mongodb');
 })
   } catch (error) {
-    console.error('Erreur de connexion à MongoDB :', error);
+    console.error('MongoDB connection error :', error);
     throw error;
   }
 };

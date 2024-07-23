@@ -1,53 +1,54 @@
-require("dotenv").config();
-const dotenv = require("dotenv");
-const express = require("express");
-const cors = require('cors');
-const {dbConnect} = require("./config/dbConnect");
-
+require('dotenv').config();
+const express = require('express');
+const appRoutes = require("./api/routes/index");
 const bodyParser = require("body-parser");
+const cors = require('cors');
+const createError = require("http-errors");
+const cookieParser = require("cookie-parser");
+const dbConnect = require('./api/config/dbConnect');
+const http = require('http');
 
-
-// Routes
-
-const Routes = require("./api/routes");
-
-// Connection to mariadb
-  initDb();
- 
+// Connection to MongoDB
+dbConnect(); 
 
 // App initialization
 const app = express();
-app.use(cors());
+const server = http.createServer(app);
+
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
+app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-//configuration cors origin
+// Middleware pour gérer les requêtes CORS
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-Type, Accept, Content-Type, Authorization"
-  );
-  if (req.method === "OPTIONS") {
-    res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
-    return res.status(200).json({});
-  }
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
+}); 
+
+// App Routes
+app.use('/api/v1', appRoutes());   
+
+// Custom 404 error handler 
+app.use((req, res, next) => {
+  next(createError(404, 'Route not found'));
 });
 
-/* App Routes */
-app.get("/refresh", (req, res) => {
-  res.status(204).send("refresh server");
+// Error handling middleware
+app.use((err, req, res, next) => {
+  res.status(err.status || 500).json({
+    error: {
+      status: err.status || 500,
+      message: err.message || 'Internal Server Error',
+    },
+  });
 });
-
-app.use("/api/", Routes);
-
 
 // Start the app
-app.listen(process.env.PORT || 5000, function () {
-  console.log("Server started");
+server.listen(4500, () => {
+  console.log("Server started on port 4500");
 });
-
-// export app
-module.exports = app;
